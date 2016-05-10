@@ -699,8 +699,8 @@ form {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 72.27814%;
-        margin: 0;
+        width: 70.14568%;
+        margin-bottom: 0;
         padding-bottom: 0.5rem;
         font-size: 1.5em; }
         .race-listing h3:last-child {
@@ -709,7 +709,7 @@ form {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 25.36421%;
+        width: 27.49666%;
         padding: 0.2rem 0 0.35rem;
         text-align: right;
         border-left: 1px solid #353c3a; }
@@ -727,6 +727,7 @@ form {
         font-size: 0.775em;
         text-align: right; }
         .race-listing .bottom-actions a {
+          width: auto;
           padding: 0 0 0 1rem; } }
 
 .user-review {
