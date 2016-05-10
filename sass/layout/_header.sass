@@ -1,0 +1,77 @@
+.site-header
+  +clearfix
+  padding: 1rem 0
+  text-align: center
+  background: $black
+
+  .rb-logo
+    +size(auto 4em)
+    .st0
+      fill: $white
+    .st1
+      fill: $green
+
+  .site-nav
+    margin: .5rem 0
+    a
+      +link-color($white)
+      @extend %small-caps
+      margin: 0 .5rem
+
+  .login-btn
+    +btn-dark($gray-medium, $white)
+    +btn-small
+  .signup-btn
+    +btn($green)
+    +btn-small
+
+  .account-logged-in
+    display: none
+    a, img
+      display: inline-block
+      vertical-align: middle
+      line-height: 1
+    .user-action-link
+      @extend %small-caps
+      margin: .25em .25em 0 0
+
+  .user-avatar
+    +size(auto 2em)
+
+  +media($smallScreenUp)
+    padding: 1.5rem 0
+
+    .site-nav
+      margin: 0
+      a
+        margin-left: 1rem
+
+    .site-nav, .user-login-wrap
+      display: inline-block
+      vertical-align: middle
+
+    .user-login-wrap
+      margin-left: 1rem
+
+    .rb-logo
+      float: left
+      +size(auto 4.5em)
+      margin-top: -1em
+
+    .sub-section
+      float: right
+      margin-top: 1.25rem
+
+.homepage .site-header
+  +media($smallScreenUp)
+    +position(absolute, 0 0 auto 0)
+    width: 100%
+    padding: 1.5rem 2rem
+    background: transparent
+
+
+.add-race
+  .account-actions
+    display: none
+  .account-logged-in
+    display: block

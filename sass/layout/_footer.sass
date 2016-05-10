@@ -1,0 +1,58 @@
+.site-footer
+  +section-padding
+  text-align: center
+  background: $black
+
+  a
+    +link-color($gray-light)
+
+  .rb-logo
+    +size(auto 6rem)
+    margin-bottom: 2rem
+    // .st2, .st0
+    //   fill: $green
+
+  .footer-nav
+    margin-bottom: 1rem
+    a
+      display: block
+      @extend %small-caps
+      margin-bottom: .25rem
+      i
+        display: none
+        margin-left: .25rem
+
+  .cta-links
+    margin-bottom: 1rem
+    a
+      +btn
+      +btn-small
+  .social-nav
+    a
+      font-size: 2em
+      margin: 0 .5rem
+
+  .copyright
+    margin-top: 1rem
+    font-size: .675em
+    color: $gray-medium
+
+  +media($smallScreenUp)
+    direction: rtl
+    .sub-section
+      display: inline-block
+      vertical-align: middle
+      width: 49%
+      padding: 0 2rem 0 0
+      text-align: right
+      &:first-child
+        padding: 0 0 0 2rem
+        text-align: left
+
+    .rb-logo
+      +size(auto 5.5em)
+      margin-top: -2rem
+
+
+    .footer-nav a i
+      display: inline-block

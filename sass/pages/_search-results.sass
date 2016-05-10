@@ -1,0 +1,22 @@
+.search-results-section
+  +section-padding-sm
+  background: $gray-dark url('../img/noise.png')
+  box-shadow: shade($gray-dark, 20) 10px 10px 0 -4px
+  h2
+    margin: 0 0  1rem
+    text-align: center
+    color: $white
+
+  .section-heading-title
+    color: $white
+
+  &.races-listing-section
+    background: darken($gray-dark, 5) url('../img/noise.png')
+
+.search-failure
+  text-align: center
+  h4
+    color: $white
+  a
+    +btn
+    +btn-large

@@ -1,0 +1,89 @@
+.race-listing
+  padding: 1rem
+  text-align: center
+  background: $black
+  color: $gray-medium
+  box-shadow: shade($gray-dark, 20) 10px 10px 0 -4px
+  &:not(:last-child)
+    margin-bottom: 1rem
+
+  .sub-section
+    +row
+
+  h3
+    margin: 0 0 .5rem
+    line-height: 1
+    font-size: 1.5em
+    color: $white
+  p
+    margin: 0
+
+  .listing-bottom
+    +clearfix
+    margin-top: .5rem
+    border-top: 1px solid $gray-darker
+
+  .top-rating
+    p, .rating-stars
+      display: inline-block
+    .rating-star.star-on
+      color: $yellow
+
+  .race-discriptor
+    display: inline-block
+    margin: 0 .5rem
+    i, p
+      display: inline-block
+      vertical-align: bottom
+      margin: 0
+    i
+      color: $gray-medium
+    &:not(:last-child) p
+      margin: 0 0 0 .35rem
+      font-weight: 600
+      font-size: .675em
+      line-height: 1
+      text-transform: uppercase
+      a
+        +link-color($gray-medium)
+
+  .bottom-actions
+    padding-top: 1rem
+    a
+      display: inline-block
+      padding: 0 1rem
+      +link-color($gray-light)
+      font-style: italic
+      font-weight: 600
+      font-family: $heading-font
+      text-transform: uppercase
+
+  +media($smallScreenUp)
+    text-align: left
+
+    .listing-bottom
+      margin: 0
+    h3
+      +span-columns(8.75)
+      margin: 0
+      padding-bottom: .5rem
+      font-size: 1.5em
+    .top-rating
+      +span-columns(3.25)
+      padding: .2rem 0 .35rem
+      text-align: right
+      border-left: 1px solid $gray-darker
+
+    .race-discriptor
+      float: left
+      margin: 0
+      padding: 0 1rem
+      border-left: 1px solid $gray-darker
+      font-size: .875em
+    .bottom-actions
+      float: right
+      padding-top: .5rem
+      font-size: .775em
+      text-align: right
+      a
+        padding: 0 0 0 1rem

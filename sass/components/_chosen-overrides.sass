@@ -1,0 +1,38 @@
+.chosen-container
+  width: 100% !important
+  border-radius: 0
+  border: none 
+  text-align: left
+  font-size: inherit
+
+  &::before
+    content: "\f0d7"
+    +position(absolute, .5rem 1rem auto auto)
+    z-index: 50
+    font-family: "FontAwesome"
+
+  .chosen-single
+    height: auto
+    padding: .45rem 1rem
+    border-radius: 0
+    border: none
+    background: $white
+    line-height: inherit
+    box-shadow: none
+
+  .chosen-drop
+    border: none
+
+  .chosen-results li
+    padding: .5rem
+    font-size: .875em
+    &.highlighted
+      +transition(background .3s)
+      background: $green
+
+.hero-form
+  .chosen-container::before
+    top: 1.2rem
+  .chosen-single
+    height: 4rem
+    padding: 1.05rem 1rem

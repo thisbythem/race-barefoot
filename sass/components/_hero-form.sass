@@ -1,0 +1,35 @@
+.hero-form
+  +clearfix
+  max-width: 20em
+  margin: 0 auto
+  background: $green
+  border: 3px solid $green
+
+  fieldset:not(:last-child)
+    border-bottom: 1px solid $green
+
+  input
+    border: none
+
+  input[type="text"]
+    height: 4rem
+    padding: 1.25rem 1rem
+
+  input[type="submit"]
+    +btn($green)
+    +btn-block
+    padding: 1.375rem 0 !important
+
+
+  +media($smallScreenUp)
+    max-width: 54em
+    box-shadow: transparentize($black, .75) 0 0 0 15px
+
+    fieldset
+      float: left
+      width: calc(100% / 5)
+      // &:nth-child(-n+2)
+      //   width: calc(45% / 2)
+      &:not(:last-child)
+        border-bottom: none
+        border-right: 1px solid $green

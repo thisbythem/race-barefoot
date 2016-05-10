@@ -1,0 +1,53 @@
+.login-page
+  background: $black
+  +media($smallScreenUp)
+    background: $black url("../img/hero-home.jpg") center bottom no-repeat
+    background-size: cover
+
+
+.login-wrap
+  max-width: 22em
+  margin: 2rem auto
+  padding: 1rem
+  background: transparentize($true-black, .75)
+  text-align: center
+
+  .rb-logo
+    margin-bottom: 1rem
+    +size(auto 6em)
+    // .st0
+    //   fill: $green
+    // .st2
+    //   fill: $white
+
+  .external-login
+    i
+      margin-right: .5rem
+
+    p
+      margin: .5rem 0
+
+    .facebook-login
+      +btn($facebook-blue)
+      +btn-block
+
+  .separator
+    color: $white
+    line-height: 1
+
+
+  form
+    margin-bottom: 1rem
+    p
+      margin: 0 0 .5rem
+
+    input[type="text"]
+      padding: 1rem
+    input[type="submit"]
+      +btn-block
+
+  +media($smallScreenUp)
+    position: relative
+    top: 20vh
+    margin: 0 auto
+    padding: 2rem

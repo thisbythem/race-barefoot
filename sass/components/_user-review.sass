@@ -1,0 +1,114 @@
+$user-color: $green
+
+.user-review
+  +clearfix
+  max-width: 36em
+  margin: 0 auto
+  padding: 2rem 1rem
+
+  .user-avatar
+    +color-corner($green)
+    float: left
+
+  .user-name
+    margin: .5rem 0 0
+    font-weight: 600
+    line-height: 1.2
+
+  .user-location
+    margin: 0 0 .5rem
+    line-height: 1
+    color: $gray-medium
+
+  .user-stat
+    display: inline-block
+    margin-right: .5rem
+    padding: .4rem .4rem
+    background: $gray-lighter
+    font-size: .775em
+
+    letter-spacing: -.05em
+    i
+      color: $green
+
+  .user-review-user-info
+    +clearfix
+    .user-avatar
+      margin-right: 1rem
+
+  .user-review-ratings
+    margin: 1rem 0
+
+  .user-review-content
+    +last-p
+
+  .user-review-stats
+    +row
+    margin-top: 1rem
+
+  .user-review-stat
+    float: left
+    width: 50%
+    padding: .5rem 1rem
+    line-height: 1
+    border-left: 2px solid $gray-light
+    h5
+      margin: 0 0 .25rem
+      text-transform: uppercase
+      font-size: .775em
+      color: $gray-medium
+    p
+      margin: 0
+      font-size: .775em
+    +media($smallScreenUp)
+      float: left
+      width: auto
+      font-size: .875em
+
+  +media($miniScreenUp)
+    .user-review-user-info,
+    .user-review-ratings
+      float: left
+      width: 50%
+    .user-review-ratings
+      margin: 0
+    .user-review-content
+      clear: both
+      padding-top: 1rem
+
+  +media($mediumScreenDown)
+    .user-avatar
+      +size(6em)
+
+  +media($mediumScreenUp)
+    max-width: none
+    margin: 0
+    padding: 1rem
+
+    .user-avatar
+      float: none
+
+    .user-review-user-info
+      +span-columns(1.5)
+    .user-review-ratings
+      margin: 0
+      +span-columns(4)
+      +shift(.25)
+    .user-review-content
+      +span-columns(6)
+      +shift(.25)
+      clear: none
+      padding: 0
+      p
+        font-size: .775em
+
+
+.race-detail .user-review
+  &:nth-child(even)
+    background: $gray-lighter
+  &:nth-child(odd)
+    background: $off-white
+  .sub-section-header
+    display: none
+  +media($smallScreenUp)
+    padding: 2.5rem 2rem

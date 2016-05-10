@@ -1,0 +1,33 @@
+%btn-base
+  display: inline-block
+  padding: 1.25em 2.25em
+  color: $white
+  font-family: $heading-font
+  font-size: 1em
+  font-weight: 600
+  font-style: italic
+  line-height: 1
+  border: none
+  text-transform: uppercase
+  &:hover
+    color: #fff
+  &:focus, &:active
+    outline: none
+
+%vertical-align
+  position: relative
+  top: 50%
+  +transform(translateY(-50%))
+
+.center-it
+  text-align: center
+
+%small-caps
+  font-size: .875rem
+  font-family: $heading-font
+  font-weight: 600
+  letter-spacing: .035em
+  text-transform: uppercase
+
+.bottom-padding
+  +bottom-padding

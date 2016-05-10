@@ -1,0 +1,73 @@
+fieldset
+  +row
+  border: none
+  margin: 0
+  padding: 0
+
+input[type="text"], input[type="tel"], input[type="email"], textarea
+  +transition(border-color .2s, box-shadow .2s)
+  width: 100%
+  padding: .5em
+  font-size: 1em
+  border: 1px solid darken($gray-lightest, 7)
+  border-radius: 0
+  background: $white
+  box-shadow: transparentize($black, .95) 0 0 0 0
+  color: $black
+  &:active, &:focus
+    outline: none
+
+input[type="radio"], input[type="checkbox"]
+  display: inline-block
+  margin: 0 .25em 0 0
+  +media($smallScreenUp)
+    margin: .4em .25em 0 0
+
+input[type="submit"], button[type="submit"]
+  +btn
+
+
+.input-with-buttons
+  background: $white
+  border: 1px solid $gray-light
+
+  .qtyplus, .qtyminus, .quantity-label
+    display: inline-block
+    vertical-align: top
+
+  .quantity-label
+    width: calc(100% - 91px)
+    line-height: 51px
+    text-align: center
+
+  img, input, span
+    display: inline-block
+    vertical-align: middle
+
+  span
+    font-size: .875em
+    line-height: 1
+
+  input
+    width: 1em
+    padding: 0
+    border: none
+    text-align: center
+    background: none
+
+
+$placeholder-color: $gray-dark
+
+
+form
+  ::-webkit-input-placeholder
+    color: $placeholder-color
+
+  :-moz-placeholder
+    color: $placeholder-color
+
+  ::-moz-placeholder
+    color: $placeholder-color
+
+  :-ms-input-placeholder
+    color: $placeholder-color

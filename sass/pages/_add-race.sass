@@ -1,0 +1,135 @@
+.add-race-section
+  +section-padding-sm
+  background: $gray-dark url('../img/noise.png')
+
+  h2
+    margin: 0 0 1.5rem
+    text-align: center
+    color: $white
+
+.add-race-form-section
+  margin-bottom: 1.5rem
+  padding: 1rem
+  background: $black
+  box-shadow: shade($gray-dark, 20) 10px 10px 0 -4px
+
+  .add-race-section-action
+    +btn-outline
+    +btn-small
+
+  fieldset
+    margin-bottom: 1.5rem
+    &.no-margin
+      margin: 0
+
+  input
+    border: none
+
+  select
+    width: 100%
+
+  h5
+    margin: 0 0 .5rem
+    text-transform: uppercase
+    color: $gray-medium
+
+  &.add-race-actions
+    p
+      margin: 0
+    p:first-of-type
+      margin-bottom: 1rem
+      color: $white
+      font-weight: 600
+      direction: ltr
+
+  .similar-race-list
+    li
+      +clearfix
+      margin-top: .75rem
+    h4
+      margin: 0
+      color: $white
+    .add-review
+      text-transform: uppercase
+      font-weight: 600
+      font-size: .775em
+
+    .add-race-prompt
+      border: none
+      p
+        margin: .5em 0 0
+        color: $white
+      a
+        +btn
+        +btn-small
+
+    +media($smallScreenUp)
+      li
+        padding-bottom: .25rem
+        border-bottom: 1px solid $gray-dark
+      .race-title
+        float: left
+      .add-review
+        display: block
+        float: right
+        margin-top: .35em
+        font-size: .675em
+      .add-race-prompt
+        p
+          float: left
+        a
+          float: right
+
+  .checkbox-label
+    +transition(color .3s)
+    +span-columns(6)
+    +omega(2n)
+    position: relative
+    margin-bottom: .5rem
+    padding: .5rem 1rem .5rem 2.25rem
+    border: 2px solid $gray-dark
+    font-size: .775em
+    color: $white
+    cursor: pointer
+    &:before
+      content: "\f096"
+      font-family: "FontAwesome"
+      +position(absolute, .6em auto auto 1em)
+    &:hover
+      color: $green
+    &.selected
+      color: $green
+      border-color: $green
+      &:before
+        content: "\f196"
+
+      border-color: $green
+    input
+      display: none
+
+
+  +media($smallScreenUp)
+    padding: 2rem
+
+    .checkbox-label
+      margin: 0
+      +omega-reset(2n)
+      +span-columns(4)
+      +omega(3n)
+      &:nth-child(n + 4)
+        margin-top: 1rem
+
+    .race-details-fields
+      +row
+      fieldset
+        +span-columns(4)
+        &:nth-child(1)
+          +span-columns(8)
+
+    &.add-race-actions
+      text-align: right
+      p
+        display: inline-block
+        direction: rtl
+        &:first-of-type
+          margin: 0 1rem 0 0

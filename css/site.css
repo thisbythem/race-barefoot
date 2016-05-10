@@ -1,0 +1,1777 @@
+@charset "UTF-8";
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+ * HTML5 display definitions
+ * ========================================================================== */
+/* Corrects `block` display not defined in IE 8/9. */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+/* Corrects `inline-block` display not defined in IE 8/9. */
+audio, canvas, video {
+  display: inline-block; }
+
+/* Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices. */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* Addresses styling for `hidden` attribute not present in IE 8/9. */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+ * Base
+ * ========================================================================== */
+/* 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom. */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Removes default margin. */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+ * Links
+ * ========================================================================== */
+/* Addresses `outline` inconsistency between Chrome and other browsers. */
+a:focus {
+  outline: thin dotted; }
+a:active, a:hover {
+  outline: 0; }
+
+/* Improves readability when focused and also mouse hovered in all browsers. */
+/* ==========================================================================
+ * Typography
+ * ========================================================================== */
+/* Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome. */
+h1 {
+  font-size: 2em; }
+
+/* Addresses styling not present in IE 8/9, Safari 5, and Chrome. */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+b, strong {
+  font-weight: bold; }
+
+/* Addresses styling not present in Safari 5 and Chrome. */
+dfn {
+  font-style: italic; }
+
+/* Addresses styling not present in IE 8/9. */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* Corrects font family set oddly in Safari 5 and Chrome. */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/* Improves readability of pre-formatted text in all browsers. */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* Sets consistent quote types. */
+q {
+  quotes: "“" "”" "‘" "’"; }
+
+/* Addresses inconsistent and variable font size in all browsers. */
+small {
+  font-size: 80%; }
+
+/* Prevents `sub` and `sup` affecting `line-height` in all browsers. */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+ * Embedded content
+ * ========================================================================== */
+/* Removes border when inside `a` element in IE 8/9. */
+img {
+  border: 0; }
+
+/* Corrects overflow displayed oddly in IE 9. */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+ * Figures
+ * ========================================================================== */
+/* Addresses margin not present in IE 8/9 and Safari 5. */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+ * Forms
+ * ========================================================================== */
+/* Define consistent border, margin, and padding. */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/* 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome */
+button, input, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/* Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet. */
+button, input {
+  line-height: normal; }
+
+/* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others. */
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/* Re-set default cursor for disabled elements. */
+button[disabled] {
+  cursor: default; }
+
+input[disabled] {
+  cursor: default; }
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/* 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9. */
+/* 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof). */
+/* Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X. */
+/* Removes inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers. */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+ * Tables
+ * ========================================================================== */
+/* Remove most spacing between table cells. */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.btn, .btn-outline, input[type="submit"], button[type="submit"], .hero-form input[type="submit"], .block-header .race-discriptor .more, .add-review-form .form-actions input[type="submit"], .site-header .login-btn, .site-header .signup-btn, .site-footer .cta-links a, .search-failure a, .add-race-form-section .add-race-section-action, .add-race-form-section .similar-race-list .add-race-prompt a, .login-wrap .external-login .facebook-login {
+  display: inline-block;
+  padding: 1.25em 2.25em;
+  color: #ffffff;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1;
+  border: none;
+  text-transform: uppercase; }
+  .btn:hover, .btn-outline:hover, input[type="submit"]:hover, button[type="submit"]:hover, .block-header .race-discriptor .more:hover, .add-review-form .form-actions input[type="submit"]:hover, .site-header .login-btn:hover, .site-header .signup-btn:hover, .site-footer .cta-links a:hover, .search-failure a:hover, .add-race-form-section .add-race-section-action:hover, .add-race-form-section .similar-race-list .add-race-prompt a:hover, .login-wrap .external-login .facebook-login:hover {
+    color: #fff; }
+  .btn:focus, .btn-outline:focus, input[type="submit"]:focus, button[type="submit"]:focus, .block-header .race-discriptor .more:focus, .add-review-form .form-actions input[type="submit"]:focus, .site-header .login-btn:focus, .site-header .signup-btn:focus, .site-footer .cta-links a:focus, .search-failure a:focus, .add-race-form-section .add-race-section-action:focus, .add-race-form-section .similar-race-list .add-race-prompt a:focus, .login-wrap .external-login .facebook-login:focus, .btn:active, .btn-outline:active, input[type="submit"]:active, button[type="submit"]:active, .block-header .race-discriptor .more:active, .add-review-form .form-actions input[type="submit"]:active, .site-header .login-btn:active, .site-header .signup-btn:active, .site-footer .cta-links a:active, .search-failure a:active, .add-race-form-section .add-race-section-action:active, .add-race-form-section .similar-race-list .add-race-prompt a:active, .login-wrap .external-login .facebook-login:active {
+    outline: none; }
+
+.center-it {
+  text-align: center; }
+
+.site-header .site-nav a, .site-header .account-logged-in .user-action-link, .site-footer .footer-nav a {
+  font-size: 0.875rem;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  text-transform: uppercase; }
+
+.bottom-padding {
+  padding-bottom: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .bottom-padding {
+      padding-bottom: 3.5rem; } }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font: normal 100%/1.5 "Roboto", Helvetica, sans-serif;
+  color: #535957; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1a211f; }
+
+h1, h2, h3, h4 {
+  font-style: italic;
+  letter-spacing: -0.025em;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.25em; }
+
+h3 {
+  font-size: 1.75em; }
+
+.sub-section-header {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #535957; }
+
+@media screen and (min-width: 320px) {
+  body {
+    font-size: 105%; } }
+@media screen and (min-width: 590px) {
+  body {
+    font-size: 110%; } }
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 115%; } }
+@media screen and (min-width: 980px) {
+  body {
+    font-size: 120%; } }
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 125%; } }
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .container.medium {
+    max-width: 46em; }
+  .container.narrow {
+    max-width: 38em; }
+
+.col-half {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .col-half:last-child {
+    margin-right: 0; }
+  .col-half:nth-child(2n) {
+    margin-right: 0; }
+  .col-half:nth-child(2n+1) {
+    clear: left; }
+
+.row {
+  display: block; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.btn {
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  background-color: #00C176; }
+  .btn:hover {
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: #00a464; }
+
+.btn-small {
+  padding: 0.75em 1.5em;
+  font-size: 0.675em; }
+  @media screen and (min-width: 768px) {
+    .btn-small {
+      font-size: 0.775em; } }
+
+.btn-outline {
+  -webkit-transition: border-color 0.2s, color 0.2s;
+  -moz-transition: border-color 0.2s, color 0.2s;
+  transition: border-color 0.2s, color 0.2s;
+  padding: 1.15em 2.15em;
+  background: none;
+  border: 2px solid #00C176;
+  color: #00C176; }
+  .btn-outline:hover {
+    -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+    background: none;
+    border-color: #00a464;
+    color: #008e57; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  background: #e7e7e7; }
+
+p {
+  margin-top: 0; }
+
+a {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  transition: color 0.2s;
+  color: #00C176;
+  text-decoration: none; }
+  a:hover {
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+    color: #008e57; }
+
+img {
+  vertical-align: bottom;
+  max-width: 100%; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+b {
+  font-weight: 900; }
+
+small {
+  font-size: 0.775em; }
+  @media screen and (min-width: 768px) {
+    small {
+      font-size: 0.675em; } }
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: #8d908f; }
+  hr.thick {
+    border-width: 5px; }
+  hr.narrow {
+    margin-left: 20%;
+    margin-right: 20%; }
+
+blockquote p {
+  margin: 1.5rem 0;
+  font-size: 1.75em;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  line-height: 1.3; }
+blockquote cite {
+  text-transform: uppercase;
+  font-size: 0.775em;
+  color: #8d908f; }
+
+.body-pp-large {
+  font-size: 1.275em;
+  line-height: 1.3; }
+
+.body-pp-small {
+  font-size: 0.875em; }
+
+.page-title {
+  border-bottom: 5px solid #1a211f; }
+
+.sub-section-title {
+  margin: 0 0 1rem;
+  color: #535957; }
+
+.page-image {
+  margin: 2rem 0;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .page-image.lg-image {
+      margin: 2rem -2rem; } }
+  .page-image img {
+    height: auto;
+    width: auto;
+    max-height: 550px;
+    box-shadow: rgba(26, 33, 31, 0.1) 10px 10px 0 -3px; }
+  .page-image figcaption {
+    margin-top: 1rem;
+    font-size: 0.775em;
+    font-style: italic;
+    color: #8d908f; }
+
+.section-heading {
+  margin: 0 0 2rem;
+  text-align: center; }
+  .section-heading .section-heading-title {
+    display: inline;
+    margin: 0; }
+
+fieldset {
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 0; }
+  fieldset:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+  -webkit-transition: border-color 0.2s, box-shadow 0.2s;
+  -moz-transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #e2e2e2;
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: rgba(26, 33, 31, 0.05) 0 0 0 0;
+  color: #1a211f; }
+  input[type="text"]:active, input[type="text"]:focus, input[type="tel"]:active, input[type="tel"]:focus, input[type="email"]:active, input[type="email"]:focus, textarea:active, textarea:focus {
+    outline: none; }
+
+input[type="radio"], input[type="checkbox"] {
+  display: inline-block;
+  margin: 0 0.25em 0 0; }
+  @media screen and (min-width: 768px) {
+    input[type="radio"], input[type="checkbox"] {
+      margin: 0.4em 0.25em 0 0; } }
+
+input[type="submit"], button[type="submit"] {
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  background-color: #00C176; }
+  input[type="submit"]:hover, button[type="submit"]:hover {
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: #00a464; }
+
+.input-with-buttons {
+  background: #ffffff;
+  border: 1px solid #d1d3d2; }
+  .input-with-buttons .qtyplus, .input-with-buttons .qtyminus, .input-with-buttons .quantity-label {
+    display: inline-block;
+    vertical-align: top; }
+  .input-with-buttons .quantity-label {
+    width: calc(100% - 91px);
+    line-height: 51px;
+    text-align: center; }
+  .input-with-buttons img, .input-with-buttons input, .input-with-buttons span {
+    display: inline-block;
+    vertical-align: middle; }
+  .input-with-buttons span {
+    font-size: 0.875em;
+    line-height: 1; }
+  .input-with-buttons input {
+    width: 1em;
+    padding: 0;
+    border: none;
+    text-align: center;
+    background: none; }
+
+form {
+  -moz-placeholder-color: #535957;
+  -ms-input-placeholder-color: #535957; }
+  form ::-webkit-input-placeholder {
+    color: #535957; }
+  form ::-moz-placeholder {
+    color: #535957; }
+
+.hero-form {
+  max-width: 20em;
+  margin: 0 auto;
+  background: #00C176;
+  border: 3px solid #00C176; }
+  .hero-form:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .hero-form fieldset:not(:last-child) {
+    border-bottom: 1px solid #00C176; }
+  .hero-form input {
+    border: none; }
+  .hero-form input[type="text"] {
+    height: 4rem;
+    padding: 1.25rem 1rem; }
+  .hero-form input[type="submit"] {
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: #00C176;
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    padding: 1.375rem 0 !important; }
+    .hero-form input[type="submit"]:hover {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #00a464; }
+  @media screen and (min-width: 768px) {
+    .hero-form {
+      max-width: 54em;
+      box-shadow: rgba(26, 33, 31, 0.25) 0 0 0 15px; }
+      .hero-form fieldset {
+        float: left;
+        width: calc(100% / 5); }
+        .hero-form fieldset:not(:last-child) {
+          border-bottom: none;
+          border-right: 1px solid #00C176; } }
+
+.race-listing {
+  padding: 1rem;
+  text-align: center;
+  background: #1a211f;
+  color: #8d908f;
+  box-shadow: #424746 10px 10px 0 -4px; }
+  .race-listing:not(:last-child) {
+    margin-bottom: 1rem; }
+  .race-listing .sub-section {
+    display: block; }
+    .race-listing .sub-section:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .race-listing h3 {
+    margin: 0 0 0.5rem;
+    line-height: 1;
+    font-size: 1.5em;
+    color: #ffffff; }
+  .race-listing p {
+    margin: 0; }
+  .race-listing .listing-bottom {
+    margin-top: 0.5rem;
+    border-top: 1px solid #353c3a; }
+    .race-listing .listing-bottom:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .race-listing .top-rating p, .race-listing .top-rating .rating-stars {
+    display: inline-block; }
+  .race-listing .top-rating .rating-star.star-on {
+    color: #FABE28; }
+  .race-listing .race-discriptor {
+    display: inline-block;
+    margin: 0 0.5rem; }
+    .race-listing .race-discriptor i, .race-listing .race-discriptor p {
+      display: inline-block;
+      vertical-align: bottom;
+      margin: 0; }
+    .race-listing .race-discriptor i {
+      color: #8d908f; }
+    .race-listing .race-discriptor:not(:last-child) p {
+      margin: 0 0 0 0.35rem;
+      font-weight: 600;
+      font-size: 0.675em;
+      line-height: 1;
+      text-transform: uppercase; }
+      .race-listing .race-discriptor:not(:last-child) p a {
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        transition: color 0.2s;
+        color: #8d908f; }
+        .race-listing .race-discriptor:not(:last-child) p a:hover, .race-listing .race-discriptor:not(:last-child) p a:active {
+          -webkit-transition: color 0.2s;
+          -moz-transition: color 0.2s;
+          transition: color 0.2s;
+          color: #008e57; }
+  .race-listing .bottom-actions {
+    padding-top: 1rem; }
+    .race-listing .bottom-actions a {
+      display: inline-block;
+      padding: 0 1rem;
+      -webkit-transition: color 0.2s;
+      -moz-transition: color 0.2s;
+      transition: color 0.2s;
+      color: #d1d3d2;
+      font-style: italic;
+      font-weight: 600;
+      font-family: "Roboto Condensed", Helvetica, sans-serif;
+      text-transform: uppercase; }
+      .race-listing .bottom-actions a:hover, .race-listing .bottom-actions a:active {
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        transition: color 0.2s;
+        color: #008e57; }
+  @media screen and (min-width: 768px) {
+    .race-listing {
+      text-align: left; }
+      .race-listing .listing-bottom {
+        margin: 0; }
+      .race-listing h3 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 72.27814%;
+        margin: 0;
+        padding-bottom: 0.5rem;
+        font-size: 1.5em; }
+        .race-listing h3:last-child {
+          margin-right: 0; }
+      .race-listing .top-rating {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 25.36421%;
+        padding: 0.2rem 0 0.35rem;
+        text-align: right;
+        border-left: 1px solid #353c3a; }
+        .race-listing .top-rating:last-child {
+          margin-right: 0; }
+      .race-listing .race-discriptor {
+        float: left;
+        margin: 0;
+        padding: 0 1rem;
+        border-left: 1px solid #353c3a;
+        font-size: 0.875em; }
+      .race-listing .bottom-actions {
+        float: right;
+        padding-top: 0.5rem;
+        font-size: 0.775em;
+        text-align: right; }
+        .race-listing .bottom-actions a {
+          padding: 0 0 0 1rem; } }
+
+.user-review {
+  max-width: 36em;
+  margin: 0 auto;
+  padding: 2rem 1rem; }
+  .user-review:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .user-review .user-avatar {
+    position: relative;
+    float: left; }
+    .user-review .user-avatar:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      z-index: 10;
+      height: 0;
+      width: 0;
+      border-top: 1em solid #00C176;
+      border-right: 1em solid transparent; }
+  .user-review .user-name {
+    margin: 0.5rem 0 0;
+    font-weight: 600;
+    line-height: 1.2; }
+  .user-review .user-location {
+    margin: 0 0 0.5rem;
+    line-height: 1;
+    color: #8d908f; }
+  .user-review .user-stat {
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.4rem;
+    background: #efefef;
+    font-size: 0.775em;
+    letter-spacing: -0.05em; }
+    .user-review .user-stat i {
+      color: #00C176; }
+  .user-review .user-review-user-info:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .user-review .user-review-user-info .user-avatar {
+    margin-right: 1rem; }
+  .user-review .user-review-ratings {
+    margin: 1rem 0; }
+  .user-review .user-review-content p:last-of-type {
+    margin-bottom: 0; }
+  .user-review .user-review-stats {
+    display: block;
+    margin-top: 1rem; }
+    .user-review .user-review-stats:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .user-review .user-review-stat {
+    float: left;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    line-height: 1;
+    border-left: 2px solid #d1d3d2; }
+    .user-review .user-review-stat h5 {
+      margin: 0 0 0.25rem;
+      text-transform: uppercase;
+      font-size: 0.775em;
+      color: #8d908f; }
+    .user-review .user-review-stat p {
+      margin: 0;
+      font-size: 0.775em; }
+    @media screen and (min-width: 768px) {
+      .user-review .user-review-stat {
+        float: left;
+        width: auto;
+        font-size: 0.875em; } }
+  @media screen and (min-width: 590px) {
+    .user-review .user-review-user-info,
+    .user-review .user-review-ratings {
+      float: left;
+      width: 50%; }
+    .user-review .user-review-ratings {
+      margin: 0; }
+    .user-review .user-review-content {
+      clear: both;
+      padding-top: 1rem; } }
+  @media screen and (max-width: 980px) {
+    .user-review .user-avatar {
+      height: 6em;
+      width: 6em; } }
+  @media screen and (min-width: 980px) {
+    .user-review {
+      max-width: none;
+      margin: 0;
+      padding: 1rem; }
+      .user-review .user-avatar {
+        float: none; }
+      .user-review .user-review-user-info {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 10.43705%; }
+        .user-review .user-review-user-info:last-child {
+          margin-right: 0; }
+      .user-review .user-review-ratings {
+        margin: 0;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-left: 2.13245%; }
+        .user-review .user-review-ratings:last-child {
+          margin-right: 0; }
+      .user-review .user-review-content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 2.13245%;
+        clear: none;
+        padding: 0; }
+        .user-review .user-review-content:last-child {
+          margin-right: 0; }
+        .user-review .user-review-content p {
+          font-size: 0.775em; } }
+
+.race-detail .user-review:nth-child(even) {
+  background: #efefef; }
+.race-detail .user-review:nth-child(odd) {
+  background: #f8f8f8; }
+.race-detail .user-review .sub-section-header {
+  display: none; }
+@media screen and (min-width: 768px) {
+  .race-detail .user-review {
+    padding: 2.5rem 2rem; } }
+
+.rating-stars {
+  line-height: 1; }
+  .rating-stars .rating-star {
+    color: #d1d3d2; }
+    .rating-stars .rating-star.star-on {
+      color: #535957; }
+  .rating-stars.branded-stars .rating-star.star-on {
+    color: #00C176; }
+
+.user-rating-category-wrap {
+  padding: 0.25rem 0; }
+  .user-rating-category-wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .user-rating-category-wrap h5 {
+    float: left;
+    margin: 0.15em 0 0;
+    width: calc(100% - 9em);
+    text-transform: uppercase;
+    font-size: 0.775em; }
+  .user-rating-category-wrap .rating-stars {
+    float: right;
+    width: 5.75em; }
+  .user-rating-category-wrap:last-of-type {
+    border: none; }
+  @media screen and (min-width: 768px) {
+    .user-rating-category-wrap h5 {
+      margin: 0.25em 0 0;
+      font-size: 0.675em; } }
+
+.user-review .user-rating-category-wrap {
+  padding: 0.5rem 0; }
+  .user-review .user-rating-category-wrap h5 {
+    padding-left: 0.5rem;
+    border-left: 5px solid #d1d3d2; }
+  .user-review .user-rating-category-wrap:first-of-type h5 {
+    border-left-color: #00C176; }
+  .user-review .user-rating-category-wrap:first-of-type .rating-star.star-on {
+    color: #00C176; }
+  .user-review .user-rating-category-wrap:last-of-type {
+    border: none; }
+
+.block-header {
+  position: relative;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #1a211f;
+  color: #ffffff; }
+  .block-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .block-header .sub-section:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .block-header .header-bottom {
+    border-top: 1px solid #535957; }
+  .block-header h2 {
+    margin: 0.5rem 0;
+    padding: 0 2px;
+    line-height: 1;
+    color: #ffffff; }
+  .block-header .block-small-title {
+    display: inline-block;
+    margin: 0;
+    padding: 0.35em 0.5em 0.25em;
+    background: #353c3a;
+    font-size: 0.775em;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.025em;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff; }
+    @media screen and (min-width: 768px) {
+      .block-header .block-small-title {
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: 100%;
+        left: 1rem;
+        z-index: 10;
+        font-size: 0.675em; } }
+  .block-header .block-header-rating:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .block-header .block-header-rating p {
+    float: right;
+    margin: 0.5rem 0 0; }
+  .block-header .block-header-rating .rating-stars {
+    float: left;
+    font-size: 1.275em; }
+  .block-header .block-header-rating .rating-star.star-on {
+    color: #FABE28; }
+  .block-header .race-discriptor:not(:last-child) {
+    float: left;
+    width: 49%;
+    clear: 2n;
+    padding: 0.25rem 0; }
+  .block-header .race-discriptor:last-child {
+    padding-top: 0.5rem;
+    clear: both; }
+  .block-header .race-discriptor i, .block-header .race-discriptor p {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0; }
+  .block-header .race-discriptor i {
+    color: #8d908f; }
+  .block-header .race-discriptor p {
+    margin: 0 0 0 0.35rem;
+    font-size: 0.675em;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #d1d3d2; }
+    .block-header .race-discriptor p a {
+      -webkit-transition: color 0.2s;
+      -moz-transition: color 0.2s;
+      transition: color 0.2s;
+      color: #d1d3d2; }
+      .block-header .race-discriptor p a:hover, .block-header .race-discriptor p a:active {
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        transition: color 0.2s;
+        color: #008e57; }
+  .block-header .race-discriptor .more {
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: #00C176;
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: 2px; }
+    .block-header .race-discriptor .more:hover {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #00a464; }
+    .block-header .race-discriptor .more i {
+      margin-right: 0.25em;
+      color: #ffffff; }
+  @media screen and (min-width: 768px) {
+    .block-header {
+      padding: 1.5rem; }
+      .block-header h2 {
+        margin: 0 0 0.5rem; }
+      .block-header .header-top {
+        display: table;
+        width: 100%; }
+      .block-header .block-title, .block-header .block-header-rating {
+        display: table-cell;
+        vertical-align: middle; }
+      .block-header .block-header-rating {
+        width: 13em;
+        border-left: 1px solid #535957; }
+      .block-header .block-title h2 {
+        display: inline-block;
+        padding: 0 4px; }
+      .block-header .block-header-rating {
+        text-align: right; }
+        .block-header .block-header-rating .rating-stars, .block-header .block-header-rating p {
+          display: inline-block;
+          vertical-align: bottom;
+          float: none;
+          margin: 0; }
+        .block-header .block-header-rating p {
+          text-align: right; }
+      .block-header .race-discriptor:not(:last-child) {
+        clear: none;
+        width: 20%;
+        padding: 0 0 0.5rem 1rem;
+        border-left: 1px solid #535957; }
+      .block-header .race-discriptor:last-child {
+        float: left;
+        clear: none;
+        width: 20%;
+        padding: 0; }
+      .block-header .race-discriptor .more {
+        font-size: 0.675em; } }
+
+.race-detail-review-form {
+  padding: 1.5rem 0;
+  background: #00C176 url("../img/noise.png"); }
+  @media screen and (min-width: 768px) {
+    .race-detail-review-form {
+      padding: 3.5rem 0; } }
+
+.add-review-form {
+  max-width: 26em;
+  margin: 0 auto; }
+  .add-review-form h5 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.775em; }
+  .add-review-form .rating-stars .rating-star {
+    color: #005b38; }
+    .add-review-form .rating-stars .rating-star.star-on {
+      color: #FABE28; }
+  .add-review-form .race-year {
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid #008e57;
+    border-bottom: 1px solid #008e57; }
+    .add-review-form .race-year:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .add-review-form .race-year h5 {
+      margin-bottom: 0.5rem; }
+    .add-review-form .race-year .chosen-container {
+      border: 1px solid #008e57;
+      background: #00C176; }
+      .add-review-form .race-year .chosen-container .chosen-drop {
+        background: #00C176;
+        border: 1px solid #008e57;
+        border-top: none; }
+      .add-review-form .race-year .chosen-container .chosen-single {
+        background: #00C176;
+        border: none;
+        font-size: 0.875em;
+        font-weight: 600; }
+      .add-review-form .race-year .chosen-container .chosen-results li.highlighted {
+        background: #1a211f; }
+  .add-review-form .race-style {
+    margin-top: 1rem; }
+    .add-review-form .race-style label {
+      -webkit-transition: background, 0.3s;
+      -moz-transition: background, 0.3s;
+      transition: background, 0.3s;
+      display: block;
+      margin-top: 0.5rem;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875em;
+      font-weight: 600;
+      border: 1px solid #008e57;
+      background: #00cb7c;
+      color: #353c3a;
+      cursor: pointer; }
+      .add-review-form .race-style label:hover {
+        background: #00d582; }
+      .add-review-form .race-style label.selected {
+        background: #005b38;
+        border-color: #005b38;
+        color: #ffffff; }
+    .add-review-form .race-style input {
+      display: none; }
+  .add-review-form .race-comments {
+    margin-top: 1rem; }
+    .add-review-form .race-comments h5 {
+      margin-bottom: 1rem; }
+    .add-review-form .race-comments textarea {
+      border: none; }
+      @media screen and (min-width: 768px) {
+        .add-review-form .race-comments textarea {
+          font-size: 0.775em; } }
+  .add-review-form .form-actions {
+    margin-top: 1rem;
+    text-align: right; }
+    .add-review-form .form-actions input[type="submit"] {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #1a211f;
+      color: #ffffff !important; }
+      .add-review-form .form-actions input[type="submit"]:hover {
+        -webkit-transition: background-color 0.2s;
+        -moz-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        background-color: #3c4241; }
+  @media screen and (min-width: 768px) {
+    .add-review-form {
+      max-width: none; }
+      .add-review-form .sub-section {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .add-review-form .sub-section:last-child {
+          margin-right: 0; }
+        .add-review-form .sub-section:first-child {
+          padding-right: 1rem; }
+      .add-review-form .race-comments {
+        margin-top: 0; } }
+
+.chosen-container {
+  width: 100% !important;
+  border-radius: 0;
+  border: none;
+  text-align: left;
+  font-size: inherit; }
+  .chosen-container::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    bottom: auto;
+    left: auto;
+    z-index: 50;
+    font-family: "FontAwesome"; }
+  .chosen-container .chosen-single {
+    height: auto;
+    padding: 0.45rem 1rem;
+    border-radius: 0;
+    border: none;
+    background: #ffffff;
+    line-height: inherit;
+    box-shadow: none; }
+  .chosen-container .chosen-drop {
+    border: none; }
+  .chosen-container .chosen-results li {
+    padding: 0.5rem;
+    font-size: 0.875em; }
+    .chosen-container .chosen-results li.highlighted {
+      -webkit-transition: background 0.3s;
+      -moz-transition: background 0.3s;
+      transition: background 0.3s;
+      background: #00C176; }
+
+.hero-form .chosen-container::before {
+  top: 1.2rem; }
+.hero-form .chosen-single {
+  height: 4rem;
+  padding: 1.05rem 1rem; }
+
+.site-header {
+  padding: 1rem 0;
+  text-align: center;
+  background: #1a211f; }
+  .site-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .site-header .rb-logo {
+    height: 4em;
+    width: auto; }
+    .site-header .rb-logo .st0 {
+      fill: #ffffff; }
+    .site-header .rb-logo .st1 {
+      fill: #00C176; }
+  .site-header .site-nav {
+    margin: 0.5rem 0; }
+    .site-header .site-nav a {
+      -webkit-transition: color 0.2s;
+      -moz-transition: color 0.2s;
+      transition: color 0.2s;
+      color: #ffffff;
+      margin: 0 0.5rem; }
+      .site-header .site-nav a:hover, .site-header .site-nav a:active {
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        transition: color 0.2s;
+        color: #008e57; }
+  .site-header .login-btn {
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: #8d908f;
+    color: #ffffff !important;
+    padding: 0.75em 1.5em;
+    font-size: 0.675em; }
+    .site-header .login-btn:hover {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #9ea1a0; }
+    @media screen and (min-width: 768px) {
+      .site-header .login-btn {
+        font-size: 0.775em; } }
+  .site-header .signup-btn {
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: #00C176;
+    padding: 0.75em 1.5em;
+    font-size: 0.675em; }
+    .site-header .signup-btn:hover {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #00a464; }
+    @media screen and (min-width: 768px) {
+      .site-header .signup-btn {
+        font-size: 0.775em; } }
+  .site-header .account-logged-in {
+    display: none; }
+    .site-header .account-logged-in a, .site-header .account-logged-in img {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1; }
+    .site-header .account-logged-in .user-action-link {
+      margin: 0.25em 0.25em 0 0; }
+  .site-header .user-avatar {
+    height: 2em;
+    width: auto; }
+  @media screen and (min-width: 768px) {
+    .site-header {
+      padding: 1.5rem 0; }
+      .site-header .site-nav {
+        margin: 0; }
+        .site-header .site-nav a {
+          margin-left: 1rem; }
+      .site-header .site-nav, .site-header .user-login-wrap {
+        display: inline-block;
+        vertical-align: middle; }
+      .site-header .user-login-wrap {
+        margin-left: 1rem; }
+      .site-header .rb-logo {
+        float: left;
+        height: 4.5em;
+        width: auto;
+        margin-top: -1em; }
+      .site-header .sub-section {
+        float: right;
+        margin-top: 1.25rem; } }
+
+@media screen and (min-width: 768px) {
+  .homepage .site-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background: transparent; } }
+
+.add-race .account-actions {
+  display: none; }
+.add-race .account-logged-in {
+  display: block; }
+
+.site-footer {
+  padding: 3rem 0;
+  text-align: center;
+  background: #1a211f; }
+  @media screen and (min-width: 768px) {
+    .site-footer {
+      padding: 5rem 0; } }
+  .site-footer a {
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+    color: #d1d3d2; }
+    .site-footer a:hover, .site-footer a:active {
+      -webkit-transition: color 0.2s;
+      -moz-transition: color 0.2s;
+      transition: color 0.2s;
+      color: #008e57; }
+  .site-footer .rb-logo {
+    height: 6rem;
+    width: auto;
+    margin-bottom: 2rem; }
+  .site-footer .footer-nav {
+    margin-bottom: 1rem; }
+    .site-footer .footer-nav a {
+      display: block;
+      margin-bottom: 0.25rem; }
+      .site-footer .footer-nav a i {
+        display: none;
+        margin-left: 0.25rem; }
+  .site-footer .cta-links {
+    margin-bottom: 1rem; }
+    .site-footer .cta-links a {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #00C176;
+      padding: 0.75em 1.5em;
+      font-size: 0.675em; }
+      .site-footer .cta-links a:hover {
+        -webkit-transition: background-color 0.2s;
+        -moz-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        background-color: #00a464; }
+      @media screen and (min-width: 768px) {
+        .site-footer .cta-links a {
+          font-size: 0.775em; } }
+  .site-footer .social-nav a {
+    font-size: 2em;
+    margin: 0 0.5rem; }
+  .site-footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.675em;
+    color: #8d908f; }
+  @media screen and (min-width: 768px) {
+    .site-footer {
+      direction: rtl; }
+      .site-footer .sub-section {
+        display: inline-block;
+        vertical-align: middle;
+        width: 49%;
+        padding: 0 2rem 0 0;
+        text-align: right; }
+        .site-footer .sub-section:first-child {
+          padding: 0 0 0 2rem;
+          text-align: left; }
+      .site-footer .rb-logo {
+        height: 5.5em;
+        width: auto;
+        margin-top: -2rem; }
+      .site-footer .footer-nav a i {
+        display: inline-block; } }
+
+.styleguide {
+  background: #ffffff; }
+
+.styleguide-wrap {
+  margin-top: 2rem;
+  margin-bottom: 4rem; }
+  .styleguide-wrap .logo {
+    height: 3em;
+    width: auto; }
+  .styleguide-wrap section:last-of-type {
+    margin-bottom: 3rem; }
+  .styleguide-wrap .add-bottom-pad {
+    padding-bottom: 1rem; }
+
+.styleguide-font-block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding-bottom: 1.5rem; }
+  .styleguide-font-block:last-child {
+    margin-right: 0; }
+  .styleguide-font-block p {
+    margin: 0.5rem 0 0;
+    font-size: 1.5em;
+    line-height: 1.2; }
+  .styleguide-font-block .small {
+    font-size: 0.675rem;
+    color: #8d908f; }
+  .styleguide-font-block .headline-font {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    letter-spacing: -0.025em; }
+  .styleguide-font-block .fa {
+    display: inline-block;
+    width: 1.25em;
+    margin-top: 0.5rem; }
+
+.styleguide-color-block {
+  float: left;
+  margin-bottom: 1rem;
+  padding: 0.5em;
+  border: 1px solid #efefef; }
+  .styleguide-color-block:not(:last-of-type) {
+    margin-right: 1rem; }
+  .styleguide-color-block span {
+    display: block;
+    height: 5em;
+    width: 5em; }
+  .styleguide-color-block p {
+    font-size: 0.775em;
+    margin: 0.5rem 0 0; }
+  .styleguide-color-block .small + .small {
+    font-size: 0.675rem;
+    color: #8d908f; }
+
+.site-tones div:nth-child(1) span {
+  background: #ffffff; }
+.site-tones div:nth-child(2) span {
+  background: #f8f8f8; }
+.site-tones div:nth-child(3) span {
+  background: #f4f4f4; }
+.site-tones div:nth-child(4) span {
+  background: #efefef; }
+.site-tones div:nth-child(5) span {
+  background: #d1d3d2; }
+.site-tones div:nth-child(6) span {
+  background: #8d908f; }
+.site-tones div:nth-child(7) span {
+  background: #535957; }
+.site-tones div:nth-child(8) span {
+  background: #1a211f; }
+
+.site-colors div:nth-child(1) span {
+  background: #00C176; }
+.site-colors div:nth-child(2) span {
+  background: #FABE28; }
+.site-colors div:nth-child(3) span {
+  background: #FF8A00; }
+
+.home-section.hero-section {
+  padding: 1.5rem 0;
+  background: #1a211f;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .home-section.hero-section {
+      padding: 3.5rem 0; } }
+  .home-section.hero-section h2 {
+    display: inline-block;
+    margin: 0 0 0.5em;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1;
+    text-shadow: #1a211f 0 0 35px, #1a211f 1px 1px 0;
+    color: #ffffff; }
+  @media screen and (min-width: 768px) {
+    .home-section.hero-section {
+      height: 50vh;
+      min-height: 430px; }
+      .home-section.hero-section h2 {
+        margin-bottom: 1em; }
+      .home-section.hero-section .sub-section {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); } }
+.home-section.feature-listing-section {
+  padding: 3rem 0; }
+  @media screen and (min-width: 768px) {
+    .home-section.feature-listing-section {
+      padding: 5rem 0; } }
+  .home-section.feature-listing-section .user-review {
+    background: #ffffff; }
+.home-section.races-listing-section {
+  padding: 3rem 0;
+  background: #535957 url("../img/noise.png"); }
+  @media screen and (min-width: 768px) {
+    .home-section.races-listing-section {
+      padding: 5rem 0; } }
+  .home-section.races-listing-section .section-heading .section-heading-title {
+    font-size: 2.5em;
+    color: #ffffff; }
+@media screen and (min-width: 768px) {
+  .home-section.hero-section {
+    padding: 1.5rem 0;
+    background: #f8f8f8 url("../img/hero-home.jpg") center bottom;
+    background-size: cover; } }
+  @media screen and (min-width: 768px) and (min-width: 768px) {
+    .home-section.hero-section {
+      padding: 3.5rem 0; } }
+
+.search-results-section {
+  padding: 1.5rem 0;
+  background: #535957 url("../img/noise.png");
+  box-shadow: #424746 10px 10px 0 -4px; }
+  @media screen and (min-width: 768px) {
+    .search-results-section {
+      padding: 3.5rem 0; } }
+  .search-results-section h2 {
+    margin: 0 0 1rem;
+    text-align: center;
+    color: #ffffff; }
+  .search-results-section .section-heading-title {
+    color: #ffffff; }
+  .search-results-section.races-listing-section {
+    background: #474c4a url("../img/noise.png"); }
+
+.search-failure {
+  text-align: center; }
+  .search-failure h4 {
+    color: #ffffff; }
+  .search-failure a {
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: #00C176;
+    padding: 1em 1.75em;
+    font-size: 1em; }
+    .search-failure a:hover {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #00a464; }
+    @media screen and (min-width: 768px) {
+      .search-failure a {
+        font-size: 1.25em; } }
+
+.add-race-section {
+  padding: 1.5rem 0;
+  background: #535957 url("../img/noise.png"); }
+  @media screen and (min-width: 768px) {
+    .add-race-section {
+      padding: 3.5rem 0; } }
+  .add-race-section h2 {
+    margin: 0 0 1.5rem;
+    text-align: center;
+    color: #ffffff; }
+
+.add-race-form-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #1a211f;
+  box-shadow: #424746 10px 10px 0 -4px; }
+  .add-race-form-section .add-race-section-action {
+    -webkit-transition: border-color 0.2s, color 0.2s;
+    -moz-transition: border-color 0.2s, color 0.2s;
+    transition: border-color 0.2s, color 0.2s;
+    padding: 1.15em 2.15em;
+    background: none;
+    border: 2px solid #00C176;
+    color: #00C176;
+    padding: 0.75em 1.5em;
+    font-size: 0.675em; }
+    .add-race-form-section .add-race-section-action:hover {
+      -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+      -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+      background: none;
+      border-color: #00a464;
+      color: #008e57; }
+    @media screen and (min-width: 768px) {
+      .add-race-form-section .add-race-section-action {
+        font-size: 0.775em; } }
+  .add-race-form-section fieldset {
+    margin-bottom: 1.5rem; }
+    .add-race-form-section fieldset.no-margin {
+      margin: 0; }
+  .add-race-form-section input {
+    border: none; }
+  .add-race-form-section select {
+    width: 100%; }
+  .add-race-form-section h5 {
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    color: #8d908f; }
+  .add-race-form-section.add-race-actions p {
+    margin: 0; }
+  .add-race-form-section.add-race-actions p:first-of-type {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    direction: ltr; }
+  .add-race-form-section .similar-race-list li {
+    margin-top: 0.75rem; }
+    .add-race-form-section .similar-race-list li:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .add-race-form-section .similar-race-list h4 {
+    margin: 0;
+    color: #ffffff; }
+  .add-race-form-section .similar-race-list .add-review {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.775em; }
+  .add-race-form-section .similar-race-list .add-race-prompt {
+    border: none; }
+    .add-race-form-section .similar-race-list .add-race-prompt p {
+      margin: 0.5em 0 0;
+      color: #ffffff; }
+    .add-race-form-section .similar-race-list .add-race-prompt a {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #00C176;
+      padding: 0.75em 1.5em;
+      font-size: 0.675em; }
+      .add-race-form-section .similar-race-list .add-race-prompt a:hover {
+        -webkit-transition: background-color 0.2s;
+        -moz-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        background-color: #00a464; }
+      @media screen and (min-width: 768px) {
+        .add-race-form-section .similar-race-list .add-race-prompt a {
+          font-size: 0.775em; } }
+  @media screen and (min-width: 768px) {
+    .add-race-form-section .similar-race-list li {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid #535957; }
+    .add-race-form-section .similar-race-list .race-title {
+      float: left; }
+    .add-race-form-section .similar-race-list .add-review {
+      display: block;
+      float: right;
+      margin-top: 0.35em;
+      font-size: 0.675em; }
+    .add-race-form-section .similar-race-list .add-race-prompt p {
+      float: left; }
+    .add-race-form-section .similar-race-list .add-race-prompt a {
+      float: right; } }
+  .add-race-form-section .checkbox-label {
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 2.25rem;
+    border: 2px solid #535957;
+    font-size: 0.775em;
+    color: #ffffff;
+    cursor: pointer; }
+    .add-race-form-section .checkbox-label:last-child {
+      margin-right: 0; }
+    .add-race-form-section .checkbox-label:nth-child(2n) {
+      margin-right: 0; }
+    .add-race-form-section .checkbox-label:nth-child(2n+1) {
+      clear: left; }
+    .add-race-form-section .checkbox-label:before {
+      content: "";
+      font-family: "FontAwesome";
+      position: absolute;
+      top: 0.6em;
+      right: auto;
+      bottom: auto;
+      left: 1em; }
+    .add-race-form-section .checkbox-label:hover {
+      color: #00C176; }
+    .add-race-form-section .checkbox-label.selected {
+      color: #00C176;
+      border-color: #00C176;
+      border-color: #00C176; }
+      .add-race-form-section .checkbox-label.selected:before {
+        content: ""; }
+    .add-race-form-section .checkbox-label input {
+      display: none; }
+  @media screen and (min-width: 768px) {
+    .add-race-form-section {
+      padding: 2rem; }
+      .add-race-form-section .checkbox-label {
+        margin: 0;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .add-race-form-section .checkbox-label:nth-child(2n) {
+          margin-right: 2.35765%; }
+        .add-race-form-section .checkbox-label:nth-child(2n+1) {
+          clear: none; }
+        .add-race-form-section .checkbox-label:last-child {
+          margin-right: 0; }
+        .add-race-form-section .checkbox-label:nth-child(3n) {
+          margin-right: 0; }
+        .add-race-form-section .checkbox-label:nth-child(3n+1) {
+          clear: left; }
+        .add-race-form-section .checkbox-label:nth-child(n + 4) {
+          margin-top: 1rem; }
+      .add-race-form-section .race-details-fields {
+        display: block; }
+        .add-race-form-section .race-details-fields:after {
+          content: "";
+          display: table;
+          clear: both; }
+        .add-race-form-section .race-details-fields fieldset {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%; }
+          .add-race-form-section .race-details-fields fieldset:last-child {
+            margin-right: 0; }
+          .add-race-form-section .race-details-fields fieldset:nth-child(1) {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 65.88078%; }
+            .add-race-form-section .race-details-fields fieldset:nth-child(1):last-child {
+              margin-right: 0; }
+      .add-race-form-section.add-race-actions {
+        text-align: right; }
+        .add-race-form-section.add-race-actions p {
+          display: inline-block;
+          direction: rtl; }
+          .add-race-form-section.add-race-actions p:first-of-type {
+            margin: 0 1rem 0 0; } }
+
+.login-page {
+  background: #1a211f; }
+  @media screen and (min-width: 768px) {
+    .login-page {
+      background: #1a211f url("../img/hero-home.jpg") center bottom no-repeat;
+      background-size: cover; } }
+
+.login-wrap {
+  max-width: 22em;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  text-align: center; }
+  .login-wrap .rb-logo {
+    margin-bottom: 1rem;
+    height: 6em;
+    width: auto; }
+  .login-wrap .external-login i {
+    margin-right: 0.5rem; }
+  .login-wrap .external-login p {
+    margin: 0.5rem 0; }
+  .login-wrap .external-login .facebook-login {
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: #3B5998;
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center; }
+    .login-wrap .external-login .facebook-login:hover {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #324c81; }
+  .login-wrap .separator {
+    color: #ffffff;
+    line-height: 1; }
+  .login-wrap form {
+    margin-bottom: 1rem; }
+    .login-wrap form p {
+      margin: 0 0 0.5rem; }
+    .login-wrap form input[type="text"] {
+      padding: 1rem; }
+    .login-wrap form input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 1em 0;
+      text-align: center; }
+  @media screen and (min-width: 768px) {
+    .login-wrap {
+      position: relative;
+      top: 20vh;
+      margin: 0 auto;
+      padding: 2rem; } }
+
+/*# sourceMappingURL=site.css.map */

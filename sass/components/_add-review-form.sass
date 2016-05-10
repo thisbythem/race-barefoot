@@ -1,0 +1,90 @@
+.race-detail-review-form
+  +section-padding-sm
+  background: $green url('../img/noise.png')
+
+.add-review-form
+  max-width: 26em
+  margin: 0 auto
+  h5
+    margin: 0
+    text-transform: uppercase
+    font-size: .775em
+
+  .rating-stars .rating-star
+    color: darken($green, 20)
+    &.star-on
+      color: $yellow
+
+  .race-year
+    +clearfix
+    margin: .5rem 0
+    padding: 1rem 0
+    border-top: 1px solid darken($green, 10)
+    border-bottom: 1px solid darken($green, 10)
+    h5
+      margin-bottom: .5rem
+
+    .chosen-container
+      border: 1px solid darken($green, 10)
+      background: $green
+      .chosen-drop
+        background: $green
+        border: 1px solid darken($green, 10)
+        border-top: none
+      .chosen-single
+        background: $green
+        border: none
+        font-size: .875em
+        font-weight: 600
+
+      .chosen-results li
+        &.highlighted
+          background: $black  
+
+
+  .race-style
+    margin-top: 1rem
+    label
+      +transition(background, .3s)
+      display: block
+      margin-top: .5rem
+      padding: .25rem .5rem
+      font-size: .875em
+      font-weight: 600
+      border: 1px solid darken($green, 10)
+      background: lighten($green, 2)
+      color: $gray-darker
+      cursor: pointer
+      &:hover
+        background: lighten($green, 4)
+      &.selected
+        background: darken($green, 20)
+        border-color: darken($green, 20)
+        color: $white
+
+    input
+      display: none
+
+  .race-comments
+    margin-top: 1rem
+    h5
+      margin-bottom: 1rem
+    textarea
+      border: none
+      +media($smallScreenUp)
+        font-size: .775em
+
+  .form-actions
+    margin-top: 1rem
+    text-align: right
+    input[type="submit"]
+      +btn-dark($black, $white)
+
+  +media($smallScreenUp)
+    max-width: none
+    .sub-section
+      +span-columns(6)
+      &:first-child
+        padding-right: 1rem
+    .race-comments
+      margin-top: 0

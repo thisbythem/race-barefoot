@@ -1,0 +1,83 @@
+//OVERRIDES BELOW
+.styleguide
+  background: $white
+
+
+// PAGE STYLES
+.styleguide-wrap
+  margin-top: 2rem
+  margin-bottom: 4rem
+
+  .logo
+    +size(auto 3em)
+
+  section:last-of-type
+    margin-bottom: 3rem
+
+  .add-bottom-pad
+    padding-bottom: 1rem
+
+.styleguide-font-block
+  +span-columns(4)
+  padding-bottom: 1.5rem
+  p
+    margin: .5rem 0 0
+    font-size: 1.5em
+    line-height: 1.2
+
+  .small
+    font-size: .675rem
+    color: $gray-medium
+
+  .headline-font
+    font-family: $heading-font
+    letter-spacing: -.025em
+
+  .fa
+    display: inline-block
+    width: 1.25em
+    margin-top: .5rem
+
+.styleguide-color-block
+  float: left
+  margin-bottom: 1rem
+  padding: .5em
+  border: 1px solid $gray-lighter
+  &:not(:last-of-type)
+    margin-right: 1rem
+  span
+    display: block
+    +size(5em)
+  p
+    font-size: .775em
+    margin: .5rem 0 0
+
+  .small + .small
+    font-size: .675rem
+    color: $gray-medium
+
+.site-tones
+  div:nth-child(1) span
+    background: $white
+  div:nth-child(2) span
+    background: $off-white
+  div:nth-child(3) span
+    background: $gray-lightest
+  div:nth-child(4) span
+    background: $gray-lighter
+  div:nth-child(5) span
+    background: $gray-light
+  div:nth-child(6) span
+    background: $gray-medium
+  div:nth-child(7) span
+    background: $gray-dark
+  div:nth-child(8) span
+    background: $black
+
+.site-colors
+  div:nth-child(1) span
+    background: $green
+  div:nth-child(2) span
+    background: $yellow
+  div:nth-child(3) span
+    background: $orange

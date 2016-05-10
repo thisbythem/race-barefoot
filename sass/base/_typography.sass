@@ -1,0 +1,53 @@
+html
+  -webkit-font-smoothing: antialiased
+
+body
+  font: normal 100%/1.5 $body-font
+  color: $global-text-color
+
+h1, h2, h3, h4, h5, h6
+  font-family: $heading-font
+  font-weight: 600
+  line-height: 1.2
+  color: $black
+
+h1, h2, h3, h4
+  font-style: italic
+  letter-spacing: -.025em
+  text-transform: uppercase
+
+h1
+  font-size: 3em
+
+h2
+  font-size: 2.25em
+
+h3
+  font-size: 1.75em
+
+.sub-section-header
+  margin: 0 0 .75rem
+  text-transform: uppercase
+  font-weight: 400
+  letter-spacing: .025em
+  color: $gray-dark
+
++media($tinyScreenUp)
+  body
+    font-size: 105%
+
++media($miniScreenUp)
+  body
+    font-size: 110%
+
++media($smallScreenUp)
+  body
+    font-size: 115%
+
++media($mediumScreenUp)
+  body
+    font-size: 120%
+
++media($hugeScreenUp)
+  body
+    font-size: 125%
