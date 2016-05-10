@@ -4,7 +4,7 @@ $user-color: $green
   +clearfix
   max-width: 36em
   margin: 0 auto
-  padding: 2rem 1rem
+  padding: 1rem
 
   .user-avatar
     +color-corner($green)
@@ -45,13 +45,15 @@ $user-color: $green
   .user-review-stats
     +row
     margin-top: 1rem
+    border-top: 1px solid $gray-light
+    border-right: 1px solid $gray-light
 
   .user-review-stat
     float: left
     width: 50%
     padding: .5rem 1rem
     line-height: 1
-    border-left: 2px solid $gray-light
+    border-left: 1px solid $gray-light
     h5
       margin: 0 0 .25rem
       text-transform: uppercase
@@ -81,6 +83,7 @@ $user-color: $green
       +size(6em)
 
   +media($mediumScreenUp)
+    padding: 2rem 1rem
     max-width: none
     margin: 0
     padding: 1rem

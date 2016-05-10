@@ -5,7 +5,7 @@
   background: $black
 
   .rb-logo
-    +size(auto 4em)
+    +size(auto 5em)
     .st0
       fill: $white
     .st1
@@ -27,17 +27,37 @@
 
   .account-logged-in
     display: none
-    a, img
+    span
+      font-size: .675em
+      font-weight: 600
+      text-transform: uppercase
+      color: $white
+
+    .user-info-wrap
+      text-align: right
+      margin-right: .5rem
+      span, a
+        display: block
+        line-height: 1
+      span
+        color: $gray-medium
+
+
+    .user-info-wrap,
+    .user-avatar-wrap
       display: inline-block
       vertical-align: middle
       line-height: 1
     .user-action-link
       @extend %small-caps
-      margin: .25em .25em 0 0
+      margin: .25em 0 0 0
 
   .user-avatar
     +size(auto 2em)
 
+  +media($smallScreenDown)
+    .account-logged-in
+      margin-top: 1rem
   +media($smallScreenUp)
     padding: 1.5rem 0
 
@@ -63,11 +83,11 @@
       margin-top: 1.25rem
 
 .homepage .site-header
+  +position(absolute, 0 0 auto 0)
+  width: 100%
+  background: transparent
   +media($smallScreenUp)
-    +position(absolute, 0 0 auto 0)
-    width: 100%
     padding: 1.5rem 2rem
-    background: transparent
 
 
 .add-race

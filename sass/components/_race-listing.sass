@@ -51,12 +51,16 @@
     padding-top: 1rem
     a
       display: inline-block
+      width: 49%
       padding: 0 1rem
       +link-color($gray-light)
       font-style: italic
       font-weight: 600
       font-family: $heading-font
       text-transform: uppercase
+      +media($smallScreenDown)
+        padding: 0
+        font-size: .875em
 
   +media($smallScreenUp)
     text-align: left

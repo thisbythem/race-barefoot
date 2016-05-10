@@ -5,11 +5,13 @@
   background: $green
   border: 3px solid $green
 
-  fieldset:not(:last-child)
-    border-bottom: 1px solid $green
+  fieldset
 
   input
     border: none
+
+  select
+    width: 100%
 
   input[type="text"]
     height: 4rem
@@ -19,6 +21,17 @@
     +btn($green)
     +btn-block
     padding: 1.375rem 0 !important
+    border-radius: 0
+
+
+  +media($smallScreenDown)
+    background: $gray-darker
+    border: none
+    fieldset
+      padding: .5rem .5rem 0
+      &:last-child
+        padding-bottom: .5rem
+      &.with-select
 
 
   +media($smallScreenUp)
@@ -28,8 +41,6 @@
     fieldset
       float: left
       width: calc(100% / 5)
-      // &:nth-child(-n+2)
-      //   width: calc(45% / 2)
       &:not(:last-child)
         border-bottom: none
         border-right: 1px solid $green

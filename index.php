@@ -27,7 +27,7 @@
           <form class="hero-form">
             <fieldset><input type="text" placeholder="Race Name"></fieldset>
             <fieldset><input type="text" placeholder="Race Location"></fieldset>
-            <fieldset>
+            <fieldset class="with-select">
               <select class="chosen-select" >
                 <option>Distance</option>
                 <option>5k</option>
@@ -36,7 +36,7 @@
                 <option>Marathon</option>
               </select>
             </fieldset>
-            <fieldset>
+            <fieldset class="with-select">
               <select class="chosen-select" >
                 <option>Month</option>
                 <option>January</option>

@@ -2,7 +2,8 @@
 
   &.hero-section
     +section-padding-sm
-    background: $black
+    background: $off-white url("../img/hero-home-sm.jpg") center bottom
+    background-size: cover
     text-align: center
 
     h2
@@ -13,6 +14,9 @@
       line-height: 1
       text-shadow: $black 0 0 35px, $black 1px 1px 0
       color: $white
+
+    +media($smallScreenDown)
+      padding-top: 200px
 
     +media($smallScreenUp)
       height: 50vh
@@ -28,6 +32,12 @@
 
   &.feature-listing-section
     +section-padding
+    +media($smallScreenDown)
+      padding: 0 !important
+      .container
+        padding: .5rem !important
+      .block-header
+        margin-top: 0
     .user-review
       background: $white
 
@@ -37,9 +47,9 @@
     background: $gray-dark url('../img/noise.png')
 
     .section-heading .section-heading-title
-      font-size: 2.5em
-      //background: $black
       color: $white
+      +media($smallScreenUp)
+        font-size: 2.5em
 
   +media($smallScreenUp)
     &.hero-section
