@@ -13,7 +13,7 @@
 </head>
 <body class="styleguide">
   <div class="container styleguide-wrap">
-    <a href="/"><img src="../img/rb-logo-square.svg" class="logo"></a>
+    <a href="/"><?php echo file_get_contents("img/rb-logo-2.svg"); ?></a>
     <h1>Website Style Guide</h1>
     <section>
       <hr>
@@ -126,16 +126,6 @@
           <span></span>
           <p class="small">Green</p>
           <p class="small">#00C176</p>
-        </div>
-        <div class="styleguide-color-block color-green">
-          <span></span>
-          <p class="small">Yellow</p>
-          <p class="small">#FABE28</p>
-        </div>
-        <div class="styleguide-color-block color-green">
-          <span></span>
-          <p class="small">Orange</p>
-          <p class="small">#FF8A00</p>
         </div>
       </div>
     </section>

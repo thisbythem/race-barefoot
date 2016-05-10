@@ -9,7 +9,7 @@
       </div>
       <nav class="footer-nav">
         <a href="basic-page.php"><i class="fa fa-angle-right"></i> About Us</a>
-        <a href="styleguide.html"><i class="fa fa-angle-right"></i> Styleguide</a>
+        <a href="styleguide.php"><i class="fa fa-angle-right"></i> Styleguide</a>
       </nav>
       <div class="social-nav">
         <a href="/"><i class="fa fa-facebook"></i></a>

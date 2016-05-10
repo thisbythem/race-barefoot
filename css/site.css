@@ -387,7 +387,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: #e7e7e7; }
+  background: gainsboro; }
 
 p {
   margin-top: 0; }
@@ -764,7 +764,7 @@ form {
     display: inline-block;
     margin-right: 0.5rem;
     padding: 0.4rem 0.4rem;
-    background: #efefef;
+    background: #e4e4e4;
     font-size: 0.775em;
     letter-spacing: -0.05em; }
     .user-review .user-stat i {
@@ -859,7 +859,7 @@ form {
           font-size: 0.775em; } }
 
 .race-detail .user-review:nth-child(even) {
-  background: #efefef; }
+  background: #e4e4e4; }
 .race-detail .user-review:nth-child(odd) {
   background: #f8f8f8; }
 .race-detail .user-review .sub-section-header {
@@ -1403,9 +1403,13 @@ form {
 .styleguide-wrap {
   margin-top: 2rem;
   margin-bottom: 4rem; }
-  .styleguide-wrap .logo {
-    height: 3em;
+  .styleguide-wrap .rb-logo {
+    height: 6em;
     width: auto; }
+    .styleguide-wrap .rb-logo .st0 {
+      fill: #1a211f; }
+    .styleguide-wrap .rb-logo .st1 {
+      fill: #00C176; }
   .styleguide-wrap section:last-of-type {
     margin-bottom: 3rem; }
   .styleguide-wrap .add-bottom-pad {
@@ -1438,7 +1442,7 @@ form {
   float: left;
   margin-bottom: 1rem;
   padding: 0.5em;
-  border: 1px solid #efefef; }
+  border: 1px solid #e4e4e4; }
   .styleguide-color-block:not(:last-of-type) {
     margin-right: 1rem; }
   .styleguide-color-block span {
@@ -1459,7 +1463,7 @@ form {
 .site-tones div:nth-child(3) span {
   background: #f4f4f4; }
 .site-tones div:nth-child(4) span {
-  background: #efefef; }
+  background: #e4e4e4; }
 .site-tones div:nth-child(5) span {
   background: #d1d3d2; }
 .site-tones div:nth-child(6) span {
