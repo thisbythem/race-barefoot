@@ -1,0 +1,22 @@
+.alert-wrap
+  position: relative
+  margin-top: 1rem
+  padding:  .5rem 1rem
+  background: $off-white
+  border: 2px solid $green
+  p
+    margin: 0
+    font-size: .875em
+    font-weight: 600
+  i
+    margin-right: .25rem
+    color: $green
+
+  .close
+    +position(absolute, .75rem .5rem auto auto)
+    color: $gray-medium !important
+
+  &.alert-warning
+    border-color: $red
+    i
+      color: $red

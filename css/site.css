@@ -387,7 +387,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: gainsboro; }
+  background: #dadada; }
 
 p {
   margin-top: 0; }
@@ -860,7 +860,7 @@ form {
           font-size: 0.775em; } }
 
 .race-detail .user-review:nth-child(even) {
-  background: #e4e4e4; }
+  background: #ededed; }
 .race-detail .user-review:nth-child(odd) {
   background: #f8f8f8; }
 .race-detail .user-review .sub-section-header {
@@ -1200,6 +1200,31 @@ form {
 .hero-form .chosen-single {
   height: 4rem;
   padding: 1.05rem 1rem; }
+
+.alert-wrap {
+  position: relative;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #f8f8f8;
+  border: 2px solid #00C176; }
+  .alert-wrap p {
+    margin: 0;
+    font-size: 0.875em;
+    font-weight: 600; }
+  .alert-wrap i {
+    margin-right: 0.25rem;
+    color: #00C176; }
+  .alert-wrap .close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    bottom: auto;
+    left: auto;
+    color: #8d908f !important; }
+  .alert-wrap.alert-warning {
+    border-color: #EF5B5B; }
+    .alert-wrap.alert-warning i {
+      color: #EF5B5B; }
 
 .site-header {
   padding: 1rem 0;
@@ -1782,7 +1807,8 @@ form {
             margin: 0 1rem 0 0; } }
 
 .login-page {
-  background: #1a211f; }
+  background: #1a211f;
+  color: #e4e4e4; }
   @media screen and (min-width: 768px) {
     .login-page {
       background: #1a211f url("../img/hero-home.jpg") center bottom no-repeat;

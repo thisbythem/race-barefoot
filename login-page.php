@@ -33,6 +33,9 @@
         <fieldset class="form-actions">
           <input type="submit" value="Login"/>
         </fieldset>
+        <p>
+          <label><input type="checkbox" /> <small>Remember Me</small></label>
+        </p>
       </form>
       <small class="form-helps"><a href="#">Forget password?</a> | <a href="#">Create Account</a></small>
     </div>
