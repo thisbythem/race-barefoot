@@ -460,6 +460,10 @@ blockquote cite {
 .sub-section-title {
   margin: 0 0 1rem;
   color: #535957; }
+  .sub-section-title.title-light {
+    color: #e4e4e4; }
+  .sub-section-title.title-dark {
+    color: #1a211f; }
 
 .page-image {
   margin: 2rem 0;
@@ -868,6 +872,23 @@ form {
 @media screen and (min-width: 768px) {
   .race-detail .user-review {
     padding: 2.5rem 2rem; } }
+
+@media screen and (min-width: 980px) {
+  .user-review.user-page-review .user-review-ratings {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 36.02647%;
+    margin-left: 0%; }
+    .user-review.user-page-review .user-review-ratings:last-child {
+      margin-right: 0; }
+  .user-review.user-page-review .user-review-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 59.48343%; }
+    .user-review.user-page-review .user-review-content:last-child {
+      margin-right: 0; } }
 
 .rating-stars {
   line-height: 1; }
@@ -1862,5 +1883,68 @@ form {
       top: 20vh;
       margin: 0 auto;
       padding: 2rem; } }
+
+.user-page {
+  background: #535957 url("../img/noise.png"); }
+  .user-page .sub-section-title {
+    color: #939695; }
+
+.section-user-header {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 0;
+  background: #474c4a url("../img/noise.png"); }
+  .section-user-header hr {
+    margin: 0; }
+  .section-user-header .user-avatar {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #8d908f; }
+    .section-user-header .user-avatar img {
+      height: 6em;
+      width: 6em; }
+  .section-user-header .user-information:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .section-user-header .user-information-sub-section {
+    float: left;
+    padding: 0.75rem 1rem 0.25rem;
+    border-right: 1px solid #8d908f; }
+    .section-user-header .user-information-sub-section p {
+      margin: 0;
+      font-size: 0.775em;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #8d908f; }
+  .section-user-header .user-name {
+    margin: 0 0 0.25rem;
+    padding-left: 1rem;
+    font-size: 1.5em;
+    color: #f8f8f8; }
+  @media screen and (max-width: 768px) {
+    .section-user-header .user-information {
+      border-right: 1px solid #8d908f;
+      border-left: 1px solid #8d908f; }
+    .section-user-header .user-name {
+      padding-top: 0.5rem; } }
+  @media screen and (min-width: 768px) {
+    .section-user-header .user-avatar, .section-user-header .user-information {
+      display: inline-block;
+      vertical-align: middle;
+      width: auto; }
+    .section-user-header .user-information {
+      width: calc(100% - 9.25rem);
+      margin-left: -0.25rem; } }
+
+.section-user-page-reviews .user-page-review {
+  margin-bottom: 1.5rem; }
+  .section-user-page-reviews .user-page-review:nth-child(even) {
+    background: #ededed; }
+  .section-user-page-reviews .user-page-review:nth-child(odd) {
+    background: #f8f8f8; }
+  @media screen and (min-width: 768px) {
+    .section-user-page-reviews .user-page-review .user-review {
+      padding: 2rem 1.5rem; } }
 
 /*# sourceMappingURL=site.css.map */

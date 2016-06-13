@@ -1,12 +1,5 @@
-<div class="user-review">
-    <div class="sub-section user-review-user-info">
-      <a href="user-page.php"><figure class="user-avatar"><img src="../img/avatar.jpg"></figure></a>
-      <p class="user-name">Stevie P.</p>
-      <p class="user-location"><small><i>Coos Bay, Oregon</i></small></p>
-      <span class="user-stat user-review-number"><i class="fa fa-pencil"></i> 5</span>
-    </div>
+<div class="user-review user-page-review">
     <div class="sub-section user-review-ratings">
-      <h5 class="sub-section-header">Stevie's Ratings</h5>
       <div class="user-rating-category-wrap">
         <h5>Overall</h5>
         <div class="rating-stars">
@@ -59,7 +52,6 @@
       </div>
     </div>
     <div class="sub-section user-review-content">
-      <h5 class="sub-section-header">Stevie's Review</h5>
       <p>2015 was the first year for the event. It defiantly had its share of first year growing pains, including the fact the course ended up changing a couple times as they had been needing to work the race with the spring football game at University of Oregon.</p>
       <p>It is a no frills event that is meant to raise funds for Girls on the Run of Lane County and to give runners a more all-ages, all-abilities, smaller feel event. It is a different course then most events in Eugene and takes you through the Springfield farm lands.</p>
       <p>The biggest growing pain was the mile markers, it seems all the mile markers had been totally off (most half marathons averaged 13.3 to 13.5). A few people complained about lack of sign marking and volunteers on the course, but I think that comes with the fact this is a first year race and they are figuring it out. At at the back of the pack, I think we only had two questions on the course.</p>

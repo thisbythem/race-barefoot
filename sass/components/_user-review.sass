@@ -106,12 +106,23 @@ $user-color: $green
         font-size: .775em
 
 
+//// RACE DETAIL PAGE
 .race-detail .user-review
   &:nth-child(even)
-    background: tint($gray-lighter, 35) 
+    background: tint($gray-lighter, 35)
   &:nth-child(odd)
     background: $off-white
   .sub-section-header
     display: none
   +media($smallScreenUp)
     padding: 2.5rem 2rem
+
+
+/// USER PAGE
+.user-review.user-page-review
+  +media($mediumScreenUp)
+    .user-review-ratings
+      +span-columns(4.5)
+      +shift(0)
+    .user-review-content
+      +span-columns(7.25)
