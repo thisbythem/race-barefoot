@@ -1,22 +1,32 @@
 .alert-wrap
-  position: relative
-  margin-top: 1rem
-  padding:  .5rem 1rem
-  background: $off-white
-  border: 2px solid $green
+  width: 100%
+  .inner
+    position: relative
+    margin-right: 1rem
+    padding:  2rem
+    background: transparentize($green, .1)
+    text-shadow: darken($green, 5) 1px 1px 0
   p
     margin: 0
     font-size: .875em
     font-weight: 600
+    color: $white
+
   i
     margin-right: .25rem
-    color: $green
+    color: $white
 
-  .close
-    +position(absolute, .75rem .5rem auto auto)
-    color: $gray-medium !important
 
-  &.alert-warning
-    border-color: $red
-    i
-      color: $red
+  .close-alert
+    +position(absolute, 2rem 1.5rem auto auto)
+    font-size: 2rem
+    line-height: 1
+    color: $white !important
+
+  &.alert-warning .inner
+    background: transparentize($red, .1)
+    text-shadow: darken($red, 25) 1px 1px 0
+
+.alert-wrap
+  +position(fixed, auto -1rem 1rem 0)
+  z-index: 100

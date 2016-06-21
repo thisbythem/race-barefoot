@@ -17,22 +17,15 @@
 </head>
 <body class="race-detail">
 
+  <div class="alert-wrap"><div class="inner">
+    <p>
+      <i class="fa fa-exclamation-circle"></i> I'm a message!
+    </p>
+    <a href="#" class="close-alert"><i class="fa fa-times-circle close"></i></a>
+  </div></div>
+
   <?php include("includes/site-header.php"); ?>
 
-  <div class="container">
-      <div class="alert-wrap">
-        <p>
-          <i class="fa fa-exclamation-circle"></i> I'm a message!
-        </p>
-        <i class="fa fa-times-circle close"></i>
-      </div>
-      <div class="alert-wrap alert-warning">
-        <p>
-          <i class="fa fa-exclamation-circle"></i> I'm an alert!
-        </p>
-        <i class="fa fa-times-circle close"></i>
-      </div>
-  </div>
   </div>
   <div class="main-content">
       <div class="container">

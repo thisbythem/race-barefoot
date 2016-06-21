@@ -17,7 +17,16 @@
 </head>
 <body class="homepage">
 
+  <div class="alert-wrap alert-warning"><div class="inner">
+    <p>
+      <i class="fa fa-exclamation-circle"></i> I'm an alert!
+    </p>
+    <a href="#" class="close-alert"><i class="fa fa-times-circle close"></i></a>
+  </div></div>
+
   <?php include("includes/site-header.php"); ?>
+
+
 
   <div class="main-content">
 

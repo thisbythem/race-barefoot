@@ -24,7 +24,7 @@
       <form>
         <fieldset>
           <p>
-            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Username" class="form-error" />
           </p>
           <p>
             <input type="text" placeholder="Password" />

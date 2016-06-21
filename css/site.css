@@ -532,6 +532,11 @@ input[type="submit"], button[type="submit"] {
     transition: background-color 0.2s;
     background-color: #00a464; }
 
+.form-error {
+  position: relative;
+  border-color: #EF5B5B !important;
+  background-color: #facece !important; }
+
 .input-with-buttons {
   background: #ffffff;
   border: 1px solid #d1d3d2; }
@@ -1222,30 +1227,49 @@ form {
   height: 4rem;
   padding: 1.05rem 1rem; }
 
+.chosen-container-single .chosen-single div b,
+.chosen-container-single .chosen-search input[type="text"],
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close,
+.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div,
+.chosen-container-single .chosen-single abbr {
+  background: none; }
+
 .alert-wrap {
-  position: relative;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #f8f8f8;
-  border: 2px solid #00C176; }
+  width: 100%; }
+  .alert-wrap .inner {
+    position: relative;
+    margin-right: 1rem;
+    padding: 2rem;
+    background: rgba(0, 193, 118, 0.9);
+    text-shadow: #00a866 1px 1px 0; }
   .alert-wrap p {
     margin: 0;
     font-size: 0.875em;
-    font-weight: 600; }
+    font-weight: 600;
+    color: #ffffff; }
   .alert-wrap i {
     margin-right: 0.25rem;
-    color: #00C176; }
-  .alert-wrap .close {
+    color: #ffffff; }
+  .alert-wrap .close-alert {
     position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
+    top: 2rem;
+    right: 1.5rem;
     bottom: auto;
     left: auto;
-    color: #8d908f !important; }
-  .alert-wrap.alert-warning {
-    border-color: #EF5B5B; }
-    .alert-wrap.alert-warning i {
-      color: #EF5B5B; }
+    font-size: 2rem;
+    line-height: 1;
+    color: #ffffff !important; }
+  .alert-wrap.alert-warning .inner {
+    background: rgba(239, 91, 91, 0.9);
+    text-shadow: #b91212 1px 1px 0; }
+
+.alert-wrap {
+  position: fixed;
+  top: auto;
+  right: -1rem;
+  bottom: 1rem;
+  left: 0;
+  z-index: 100; }
 
 .site-header {
   padding: 1rem 0;
