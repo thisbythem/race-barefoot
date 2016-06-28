@@ -37,16 +37,17 @@
             <fieldset><input type="text" placeholder="Race Name"></fieldset>
             <fieldset><input type="text" placeholder="Race Location"></fieldset>
             <fieldset class="with-select">
-              <select class="chosen-select" >
+              <select class="form-error">
                 <option>Distance</option>
                 <option>5k</option>
                 <option>10k</option>
                 <option>15k</option>
                 <option>Marathon</option>
               </select>
+              <span class="form-error-instructions">Can't be blank</span>
             </fieldset>
             <fieldset class="with-select">
-              <select class="chosen-select" >
+              <select>
                 <option>Month</option>
                 <option>January</option>
                 <option>February</option>

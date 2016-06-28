@@ -61,28 +61,34 @@
 
           <div class="add-race-details add-race-form-section">
             <div class="race-details-fields">
-              <fieldset>
+              <div class="wrap">
                 <h5>Race City</h5>
-                <input type="text" />
-              </fieldset>
+                <fieldset>
+                  <input type="text" />
+                </fieldset>
+              </div>
 
-              <fieldset>
+              <div class="wrap">
                 <h5>Race Month</h5>
-                <select class="chosen-select">
-                  <option>Janurary</option>
-                </select>
-              </fieldset>
+                <fieldset class="with-select">
+                  <select>
+                    <option>Janurary</option>
+                  </select>
+                </fieldset>
+              </div>
+
             </div>
             <fieldset>
               <h5>Distances <small>Select all distances offered</small></h5>
               <div class="sub-section row">
-                <label class="checkbox-label"><input type="checkbox" /> 5k</label>
+                <label class="checkbox-label form-error"><input type="checkbox" /> 5k</label>
                 <label class="checkbox-label selected"><input type="checkbox" /> 10k</label>
                 <label class="checkbox-label"><input type="checkbox" /> 15k</label>
                 <label class="checkbox-label"><input type="checkbox" /> Marathon</label>
                 <label class="checkbox-label"><input type="checkbox" /> 50 miles</label>
                 <label class="checkbox-label"><input type="checkbox" /> 100+ miles</label>
               </div>
+              <span class="form-error-instructions">Can't be blank</span>
             </fieldset>
             <div class="race-details-fields">
               <fieldset class="no-margin">

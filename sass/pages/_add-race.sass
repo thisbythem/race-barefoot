@@ -13,8 +13,11 @@
   background: $black
   box-shadow: shade($gray-dark, 20) 10px 10px 0 -4px
 
+  &.add-race-name fieldset
+    margin-bottom: 1rem
+
   .add-race-section-action
-    +btn-outline
+    +btn($green)
     +btn-small
 
   fieldset
@@ -113,6 +116,10 @@
     input
       display: none
 
+  .with-select
+    +add-select-arrow(.5em)
+    select
+      +select-block-style(2.2em)
 
   +media($smallScreenUp)
     padding: 2rem
@@ -130,7 +137,7 @@
 
     .race-details-fields
       +row
-      fieldset
+      .wrap
         +span-columns(4)
         &:nth-child(1)
           +span-columns(8)

@@ -23,28 +23,15 @@
     border-bottom: 1px solid darken($green, 10)
 
     select
-      width: 100%
-      
+      +select-block-style
+      border: 1px solid darken($green, 10)
+      background: lighten($green, 2)
+
     h5
       margin-bottom: .5rem
 
-    .chosen-container
-      border: 1px solid darken($green, 10)
-      background: $green
-      .chosen-drop
-        background: $green
-        border: 1px solid darken($green, 10)
-        border-top: none
-      .chosen-single
-        background: $green
-        border: none
-        font-size: .875em
-        font-weight: 600
-
-      .chosen-results li
-        &.highlighted
-          background: $black
-
+  fieldset.with-select
+    +add-select-arrow(.9em)
 
   .race-style
     margin-top: 1rem

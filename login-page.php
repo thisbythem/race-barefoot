@@ -25,6 +25,7 @@
         <fieldset>
           <p>
             <input type="text" placeholder="Username" class="form-error" />
+            <span class="form-error-instructions">Can't be blank</span>
           </p>
           <p>
             <input type="text" placeholder="Password" />

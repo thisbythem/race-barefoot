@@ -533,9 +533,20 @@ input[type="submit"], button[type="submit"] {
     background-color: #00a464; }
 
 .form-error {
-  position: relative;
-  border-color: #EF5B5B !important;
-  background-color: #facece !important; }
+  border: 1px solid #dd4f4f !important;
+  background: #f5caca !important;
+  color: #dd4f4f !important; }
+
+.form-error-instructions {
+  display: block;
+  margin: 3px 0;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.775rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-align: left;
+  background: #dd4f4f;
+  color: white; }
 
 .input-with-buttons {
   background: #ffffff;
@@ -577,10 +588,30 @@ form {
     content: "";
     display: table;
     clear: both; }
+  .hero-form fieldset.with-select {
+    position: relative; }
+    .hero-form fieldset.with-select::after {
+      content: "";
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      bottom: auto;
+      left: auto;
+      font-family: "FontAwesome"; }
   .hero-form input {
     border: none; }
   .hero-form select {
-    width: 100%; }
+    width: 100%;
+    background: none;
+    height: 3.2em;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    background: #ffffff;
+    padding: 0 1rem;
+    cursor: pointer; }
+    .hero-form select:focus {
+      outline: none; }
   .hero-form input[type="text"] {
     height: 4rem;
     padding: 1.25rem 1rem; }
@@ -617,7 +648,15 @@ form {
         width: calc(100% / 5); }
         .hero-form fieldset:not(:last-child) {
           border-bottom: none;
-          border-right: 1px solid #00C176; } }
+          border-right: 1px solid #00C176; }
+      .hero-form .form-error-instructions {
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: 100%;
+        left: 0;
+        width: 100%;
+        margin-bottom: -1px; } }
 
 .race-listing {
   padding: 1rem;
@@ -903,6 +942,8 @@ form {
       color: #535957; }
   .rating-stars.branded-stars .rating-star.star-on {
     color: #00C176; }
+  .rating-stars.rating-star-form-error .rating-star {
+    color: #dd4f4f !important; }
 
 .user-rating-category-wrap {
   padding: 0.25rem 0; }
@@ -1109,23 +1150,31 @@ form {
       display: table;
       clear: both; }
     .add-review-form .race-year select {
-      width: 100%; }
+      width: 100%;
+      background: none;
+      height: 3em;
+      border: none;
+      border-radius: 0;
+      -webkit-appearance: none;
+      background: #ffffff;
+      padding: 0 1rem;
+      cursor: pointer;
+      border: 1px solid #008e57;
+      background: #00cb7c; }
+      .add-review-form .race-year select:focus {
+        outline: none; }
     .add-review-form .race-year h5 {
       margin-bottom: 0.5rem; }
-    .add-review-form .race-year .chosen-container {
-      border: 1px solid #008e57;
-      background: #00C176; }
-      .add-review-form .race-year .chosen-container .chosen-drop {
-        background: #00C176;
-        border: 1px solid #008e57;
-        border-top: none; }
-      .add-review-form .race-year .chosen-container .chosen-single {
-        background: #00C176;
-        border: none;
-        font-size: 0.875em;
-        font-weight: 600; }
-      .add-review-form .race-year .chosen-container .chosen-results li.highlighted {
-        background: #1a211f; }
+  .add-review-form fieldset.with-select {
+    position: relative; }
+    .add-review-form fieldset.with-select::after {
+      content: "";
+      position: absolute;
+      top: 0.9em;
+      right: 1em;
+      bottom: auto;
+      left: auto;
+      font-family: "FontAwesome"; }
   .add-review-form .race-style {
     margin-top: 1rem; }
     .add-review-form .race-style label {
@@ -1227,12 +1276,8 @@ form {
   height: 4rem;
   padding: 1.05rem 1rem; }
 
-.chosen-container-single .chosen-single div b,
-.chosen-container-single .chosen-search input[type="text"],
-.chosen-container-multi .chosen-choices li.search-choice .search-choice-close,
-.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div,
-.chosen-container-single .chosen-single abbr {
-  background: none; }
+.chosen-rtl .chosen-search input[type="text"], .chosen-container-single .chosen-single abbr, .chosen-container-single .chosen-single div b, .chosen-container-single .chosen-search input[type="text"], .chosen-container-multi .chosen-choices .search-choice .search-choice-close, .chosen-container .chosen-results-scroll-down span, .chosen-container .chosen-results-scroll-up span {
+  background: none !important; }
 
 .alert-wrap {
   width: 100%; }
@@ -1260,8 +1305,8 @@ form {
     line-height: 1;
     color: #ffffff !important; }
   .alert-wrap.alert-warning .inner {
-    background: rgba(239, 91, 91, 0.9);
-    text-shadow: #b91212 1px 1px 0; }
+    background: rgba(221, 79, 79, 0.9);
+    text-shadow: #911c1c 1px 1px 0; }
 
 .alert-wrap {
   position: fixed;
@@ -1670,23 +1715,20 @@ form {
   padding: 1rem;
   background: #1a211f;
   box-shadow: #424746 10px 10px 0 -4px; }
+  .add-race-form-section.add-race-name fieldset {
+    margin-bottom: 1rem; }
   .add-race-form-section .add-race-section-action {
-    -webkit-transition: border-color 0.2s, color 0.2s;
-    -moz-transition: border-color 0.2s, color 0.2s;
-    transition: border-color 0.2s, color 0.2s;
-    padding: 1.15em 2.15em;
-    background: none;
-    border: 2px solid #00C176;
-    color: #00C176;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    background-color: #00C176;
     padding: 0.75em 1.5em;
     font-size: 0.775em; }
     .add-race-form-section .add-race-section-action:hover {
-      -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
-      -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
-      transition: background 0.2s, border-color 0.2s, color 0.2s;
-      background: none;
-      border-color: #00a464;
-      color: #008e57; }
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      background-color: #00a464; }
     @media screen and (min-width: 768px) {
       .add-race-form-section .add-race-section-action {
         font-size: 0.775em; } }
@@ -1800,6 +1842,28 @@ form {
         content: ""; }
     .add-race-form-section .checkbox-label input {
       display: none; }
+  .add-race-form-section .with-select {
+    position: relative; }
+    .add-race-form-section .with-select::after {
+      content: "";
+      position: absolute;
+      top: 0.5em;
+      right: 1em;
+      bottom: auto;
+      left: auto;
+      font-family: "FontAwesome"; }
+    .add-race-form-section .with-select select {
+      width: 100%;
+      background: none;
+      height: 2.2em;
+      border: none;
+      border-radius: 0;
+      -webkit-appearance: none;
+      background: #ffffff;
+      padding: 0 1rem;
+      cursor: pointer; }
+      .add-race-form-section .with-select select:focus {
+        outline: none; }
   @media screen and (min-width: 768px) {
     .add-race-form-section {
       padding: 2rem; }
@@ -1829,19 +1893,19 @@ form {
           content: "";
           display: table;
           clear: both; }
-        .add-race-form-section .race-details-fields fieldset {
+        .add-race-form-section .race-details-fields .wrap {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 31.76157%; }
-          .add-race-form-section .race-details-fields fieldset:last-child {
+          .add-race-form-section .race-details-fields .wrap:last-child {
             margin-right: 0; }
-          .add-race-form-section .race-details-fields fieldset:nth-child(1) {
+          .add-race-form-section .race-details-fields .wrap:nth-child(1) {
             float: left;
             display: block;
             margin-right: 2.35765%;
             width: 65.88078%; }
-            .add-race-form-section .race-details-fields fieldset:nth-child(1):last-child {
+            .add-race-form-section .race-details-fields .wrap:nth-child(1):last-child {
               margin-right: 0; }
       .add-race-form-section.add-race-actions {
         text-align: right; }
