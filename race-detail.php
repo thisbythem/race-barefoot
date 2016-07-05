@@ -32,7 +32,7 @@
 
         <header class="block-header">
           <div class="sub-section header-top">
-            <div class="block-title"><h2 class="add-bg">New York Marathon</h2></div>
+            <div class="block-title"><h2 class="add-bg">New York Marathon <small><a href="/">Edit</a></small></h2></div>
             <div class="block-header-rating">
               <p><small>167 reviews</small></p>
               <div class="rating-stars">

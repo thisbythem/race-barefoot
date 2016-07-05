@@ -11,9 +11,14 @@ $user-color: $green
     float: left
 
   .user-name
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
     margin: .5rem 0 0
+    padding-right: .5rem
     font-weight: 600
     line-height: 1.2
+
 
   .user-location
     margin: 0 0 .5rem
@@ -90,12 +95,16 @@ $user-color: $green
 
     .user-avatar
       float: none
+    .user-name
+      padding: 0
+      font-size: .875em
+
 
     .user-review-user-info
-      +span-columns(1.5)
+      +span-columns(1.75)
     .user-review-ratings
       margin: 0
-      +span-columns(4)
+      +span-columns(3.75)
       +shift(.25)
     .user-review-content
       +span-columns(6)
@@ -112,6 +121,8 @@ $user-color: $green
     background: tint($gray-lighter, 35)
   &:nth-child(odd)
     background: $off-white
+  &:last-child
+    margin-bottom: 1.5em
   .sub-section-header
     display: none
   +media($smallScreenUp)

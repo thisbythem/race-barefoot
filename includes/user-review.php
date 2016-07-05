@@ -1,7 +1,7 @@
 <div class="user-review">
     <div class="sub-section user-review-user-info">
       <a href="user-page.php"><figure class="user-avatar"><img src="../img/avatar.jpg"></figure></a>
-      <p class="user-name">Stevie P.</p>
+      <p class="user-name">Tracy pompom winnebago davenport</p>
       <p class="user-location"><small><i>Coos Bay, Oregon</i></small></p>
       <span class="user-stat user-review-number"><i class="fa fa-pencil"></i> 5</span>
     </div>

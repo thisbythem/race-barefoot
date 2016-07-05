@@ -387,7 +387,13 @@ html {
 body {
   height: 100%;
   margin: 0;
+  background: #1a211f; }
+
+.main-content {
   background: #dadada; }
+
+.race-detail .main-content {
+  padding-top: 1em; }
 
 p {
   margin-top: 0; }
@@ -603,18 +609,20 @@ form {
   .hero-form select {
     width: 100%;
     background: none;
-    height: 3.2em;
+    height: 4rem;
     border: none;
     border-radius: 0;
     -webkit-appearance: none;
     background: #ffffff;
     padding: 0 1rem;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 0.875em; }
     .hero-form select:focus {
       outline: none; }
   .hero-form input[type="text"] {
     height: 4rem;
-    padding: 1.25rem 1rem; }
+    padding: 1.25rem 1rem;
+    font-size: 0.875em; }
   .hero-form input[type="submit"] {
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
@@ -802,7 +810,11 @@ form {
       border-top: 1em solid #00C176;
       border-right: 1em solid transparent; }
   .user-review .user-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0.5rem 0 0;
+    padding-right: 0.5rem;
     font-weight: 600;
     line-height: 1.2; }
   .user-review .user-location {
@@ -878,11 +890,14 @@ form {
       padding: 1rem; }
       .user-review .user-avatar {
         float: none; }
+      .user-review .user-name {
+        padding: 0;
+        font-size: 0.875em; }
       .user-review .user-review-user-info {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 10.43705%; }
+        width: 12.56951%; }
         .user-review .user-review-user-info:last-child {
           margin-right: 0; }
       .user-review .user-review-ratings {
@@ -890,7 +905,7 @@ form {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%;
+        width: 29.62911%;
         margin-left: 2.13245%; }
         .user-review .user-review-ratings:last-child {
           margin-right: 0; }
@@ -911,6 +926,8 @@ form {
   background: #ededed; }
 .race-detail .user-review:nth-child(odd) {
   background: #f8f8f8; }
+.race-detail .user-review:last-child {
+  margin-bottom: 1.5em; }
 .race-detail .user-review .sub-section-header {
   display: none; }
 @media screen and (min-width: 768px) {
@@ -1680,6 +1697,7 @@ form {
     background: #474c4a url("../img/noise.png"); }
 
 .search-failure {
+  min-height: 240px;
   text-align: center; }
   .search-failure h4 {
     color: #ffffff; }
