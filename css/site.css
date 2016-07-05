@@ -1406,6 +1406,10 @@ form {
         display: block;
         line-height: 1; }
       .site-header .account-logged-in .user-info-wrap span {
+        max-width: 6em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         color: #8d908f; }
     .site-header .account-logged-in .user-info-wrap,
     .site-header .account-logged-in .user-avatar-wrap {

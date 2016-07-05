@@ -18,7 +18,7 @@
 
         <div class="account-logged-in">
           <div class="user-info-wrap">
-            <span>Stevie P.</span>
+            <span>Tracy pompom winnebago davenport</span>
             <a href="#" class="user-action-link">Logout</a>
           </div>
           <a href="#" class="user-avatar-wrap"> <img src="../img/default-avatar.png" class="user-avatar"/> </a>
