@@ -1,0 +1,66 @@
+.toggle-button
+  display: block
+  height: 1rem
+
+.toggle-button span,
+.toggle-button span:before,
+.toggle-button span:after
+  +transition(.2s)
+  content: ""
+  display: block
+  position: relative
+  top: .5rem
+  width: 20px
+  height: 3px
+  background-color: $white
+  backface-visibility: hidden
+  border-radius: 2px
+
+.toggle-button span
+  &::before
+    +position(absolute, -6px auto auto 0)
+  &::after
+    +position(absolute, 6px auto auto 0)
+
+.toggle-button.on
+  span
+    background: transparent
+    &::before
+      +transform(translate(0, 6px) rotate(-40deg))
+    &::after
+      +transform(translate(0, -6px) rotate(40deg) )
+
+.drop-nav-wrap
+  position: relative
+  &.open
+    .drop-nav
+      visibility: visible
+      opacity: 1
+      margin-top: .5rem
+
+  .drop-nav
+    +transition(opacity .2s, margin .3s)
+    visibility: hidden
+    opacity: 0
+    +position(absolute, 100% auto auto -3.5rem)
+    z-index: 500
+    width: 8rem
+    margin-top: -.5rem
+    padding: .5rem 0
+    text-align: center
+    background: darken($black, 3)
+    border-radius: .25rem
+    box-shadow: transparentize($black, .75) 0 5px 15px 0
+    li
+      padding: .5rem 0
+      font-size: .675em
+      font-weight: 700
+      line-height: 1
+      text-transform: uppercase
+      &:first-child
+        position: relative
+        &::before
+          content: ""
+          +triangle(1.5em, darken($black, 3), up)
+          +position(absolute, -.9rem 0 0 50%)
+          margin-left:  -.55rem

@@ -1,6 +1,9 @@
 <header class="site-header">
   <div class="container">
-        <a href="/"><?php echo file_get_contents("img/rb-logo-2.svg"); ?></a>
+
+    <a href="/"><?php echo file_get_contents("img/rb-logo-2.svg"); ?></a>
+
+    <a href="#" id="toggle" class="toggle-button mobile-nav-toggle"><span></span></a>
 
     <div class="sub-section">
       <nav class="site-nav">
@@ -8,6 +11,15 @@
         <a href="search-results.php">Search Results</a>
         <a href="add-race.php">Add Race</a>
       </nav>
+
+      <div class="drop-nav-wrap">
+        <a href="#" id="toggle" class="toggle-button"><span></span></a>
+        <ul class="drop-nav" id="drop-nav">
+          <li><a href="/">Sample Link</a></li>
+          <li><a href="/">Sample Link</a></li>
+          <li><a href="/">Sample Link</a></li>
+        </ul>
+      </div>
 
       <div class="user-login-wrap">
 
@@ -29,3 +41,5 @@
     </div>
   </div>
 </header>
+
+<script type="text/javascript" src="js/toggle.js"></script>

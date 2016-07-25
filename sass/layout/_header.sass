@@ -5,11 +5,14 @@
   background: $black
 
   .rb-logo
-    +size(auto 5em)
+    +size(auto 4em)
     .st0
       fill: $white
     .st1
       fill: $green
+
+  .mobile-nav-toggle
+    display: none
 
   .site-nav
     margin: .5rem 0
@@ -60,23 +63,58 @@
     +size(auto 2em)
 
   +media($smallScreenDown)
+    .rb-logo
+      float: left
+      margin-bottom: 1rem
+
+    .mobile-nav-toggle
+      display: block
+      float: right
+      margin-top: 2.25rem
+
+    .site-nav
+      +transition(max-height .4s)
+      clear: both
+      max-height: 0
+      overflow: hidden
+      margin: 0
+      &.open
+        max-height: 7em
+      a
+        display: block
+        text-align: left
+        margin: 0
+        padding: .25rem
+        border-top: 1px solid $gray-dark
+        &:last-child
+          border-bottom:  1px solid $gray-dark
+
     .account-logged-in
       margin-top: 1rem
+
+    .drop-nav-wrap
+      display: none
+
   +media($smallScreenUp)
     padding: 1.5rem 0
+
+    .rb-logo
+      +size(auto 5em)
 
     .site-nav
       margin: 0
       a
         margin-left: 1rem
 
-    .site-nav, .user-login-wrap
+    .site-nav, .drop-nav-wrap, .user-login-wrap
       display: inline-block
       vertical-align: middle
 
     .user-login-wrap
       margin-left: 1rem
 
+    .drop-nav-wrap
+      margin: 0 1rem
     .rb-logo
       float: left
       +size(auto 4.5em)

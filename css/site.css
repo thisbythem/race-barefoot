@@ -1333,6 +1333,101 @@ form {
   left: 0;
   z-index: 100; }
 
+.toggle-button {
+  display: block;
+  height: 1rem; }
+
+.toggle-button span,
+.toggle-button span:before,
+.toggle-button span:after {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.5rem;
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  backface-visibility: hidden;
+  border-radius: 2px; }
+
+.toggle-button span::before {
+  position: absolute;
+  top: -6px;
+  right: auto;
+  bottom: auto;
+  left: 0; }
+.toggle-button span::after {
+  position: absolute;
+  top: 6px;
+  right: auto;
+  bottom: auto;
+  left: 0; }
+
+.toggle-button.on span {
+  background: transparent; }
+  .toggle-button.on span::before {
+    -webkit-transform: translate(0, 6px) rotate(-40deg);
+    -moz-transform: translate(0, 6px) rotate(-40deg);
+    -ms-transform: translate(0, 6px) rotate(-40deg);
+    -o-transform: translate(0, 6px) rotate(-40deg);
+    transform: translate(0, 6px) rotate(-40deg); }
+  .toggle-button.on span::after {
+    -webkit-transform: translate(0, -6px) rotate(40deg);
+    -moz-transform: translate(0, -6px) rotate(40deg);
+    -ms-transform: translate(0, -6px) rotate(40deg);
+    -o-transform: translate(0, -6px) rotate(40deg);
+    transform: translate(0, -6px) rotate(40deg); }
+
+.drop-nav-wrap {
+  position: relative; }
+  .drop-nav-wrap.open .drop-nav {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0.5rem; }
+  .drop-nav-wrap .drop-nav {
+    -webkit-transition: opacity 0.2s, margin 0.3s;
+    -moz-transition: opacity 0.2s, margin 0.3s;
+    transition: opacity 0.2s, margin 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    right: auto;
+    bottom: auto;
+    left: -3.5rem;
+    z-index: 500;
+    width: 8rem;
+    margin-top: -0.5rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    background: #131817;
+    border-radius: 0.25rem;
+    box-shadow: rgba(26, 33, 31, 0.25) 0 5px 15px 0; }
+    .drop-nav-wrap .drop-nav li {
+      padding: 0.5rem 0;
+      font-size: 0.675em;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase; }
+      .drop-nav-wrap .drop-nav li:first-child {
+        position: relative; }
+        .drop-nav-wrap .drop-nav li:first-child::before {
+          content: "";
+          height: 0;
+          width: 0;
+          border-left: 0.75em solid transparent;
+          border-right: 0.75em solid transparent;
+          border-bottom: 0.75em solid #131817;
+          position: absolute;
+          top: -0.9rem;
+          right: 0;
+          bottom: 0;
+          left: 50%;
+          margin-left: -0.55rem; }
+
 .site-header {
   padding: 1rem 0;
   text-align: center;
@@ -1342,12 +1437,14 @@ form {
     display: table;
     clear: both; }
   .site-header .rb-logo {
-    height: 5em;
+    height: 4em;
     width: auto; }
     .site-header .rb-logo .st0 {
       fill: #ffffff; }
     .site-header .rb-logo .st1 {
       fill: #00C176; }
+  .site-header .mobile-nav-toggle {
+    display: none; }
   .site-header .site-nav {
     margin: 0.5rem 0; }
     .site-header .site-nav a {
@@ -1422,20 +1519,52 @@ form {
     height: 2em;
     width: auto; }
   @media screen and (max-width: 768px) {
+    .site-header .rb-logo {
+      float: left;
+      margin-bottom: 1rem; }
+    .site-header .mobile-nav-toggle {
+      display: block;
+      float: right;
+      margin-top: 2.25rem; }
+    .site-header .site-nav {
+      -webkit-transition: max-height 0.4s;
+      -moz-transition: max-height 0.4s;
+      transition: max-height 0.4s;
+      clear: both;
+      max-height: 0;
+      overflow: hidden;
+      margin: 0; }
+      .site-header .site-nav.open {
+        max-height: 7em; }
+      .site-header .site-nav a {
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 0.25rem;
+        border-top: 1px solid #535957; }
+        .site-header .site-nav a:last-child {
+          border-bottom: 1px solid #535957; }
     .site-header .account-logged-in {
-      margin-top: 1rem; } }
+      margin-top: 1rem; }
+    .site-header .drop-nav-wrap {
+      display: none; } }
   @media screen and (min-width: 768px) {
     .site-header {
       padding: 1.5rem 0; }
+      .site-header .rb-logo {
+        height: 5em;
+        width: auto; }
       .site-header .site-nav {
         margin: 0; }
         .site-header .site-nav a {
           margin-left: 1rem; }
-      .site-header .site-nav, .site-header .user-login-wrap {
+      .site-header .site-nav, .site-header .drop-nav-wrap, .site-header .user-login-wrap {
         display: inline-block;
         vertical-align: middle; }
       .site-header .user-login-wrap {
         margin-left: 1rem; }
+      .site-header .drop-nav-wrap {
+        margin: 0 1rem; }
       .site-header .rb-logo {
         float: left;
         height: 4.5em;
