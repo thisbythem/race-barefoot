@@ -73,13 +73,15 @@
       margin-top: 2.25rem
 
     .site-nav
-      +transition(max-height .4s)
+      +transition(max-height .3s, margin .5s)
       clear: both
       max-height: 0
       overflow: hidden
       margin: 0
+      background: transparentize($black, .5)
       &.open
         max-height: 7em
+        margin-bottom: 1rem
       a
         display: block
         text-align: left
