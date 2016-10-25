@@ -64,3 +64,13 @@
           +triangle(1.5em, darken($black, 3), up)
           +position(absolute, -.9rem 0 0 50%)
           margin-left:  -.55rem
+    a
+      +link-color($white)
+
+  +media($smallScreenDown)
+    .drop-nav
+      +position(abslute, 100% 0 auto auto)
+      li
+        font-size: .775em 
+      li:first-child::before
+        +position(absolute, -.9rem .2rem 0 auto)

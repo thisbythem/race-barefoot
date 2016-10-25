@@ -67,35 +67,15 @@
       float: left
       margin-bottom: 1rem
 
-    .mobile-nav-toggle
-      display: block
-      float: right
-      margin-top: 2.25rem
-
-    .site-nav
-      +transition(max-height .3s, margin .5s)
-      clear: both
-      max-height: 0
-      overflow: hidden
-      margin: 0
-      background: transparentize($black, .5)
-      &.open
-        max-height: 7em
-        margin-bottom: 1rem
-      a
-        display: block
-        text-align: left
-        margin: 0
-        padding: .25rem
-        border-top: 1px solid $gray-dark
-        &:last-child
-          border-bottom:  1px solid $gray-dark
-
     .account-logged-in
       margin-top: 1rem
 
     .drop-nav-wrap
-      display: none
+      float: right
+      margin: 2rem 1rem 0 0
+
+    .user-login-wrap
+      clear: both
 
   +media($smallScreenUp)
     padding: 1.5rem 0

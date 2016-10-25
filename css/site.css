@@ -1427,6 +1427,31 @@ form {
           bottom: 0;
           left: 50%;
           margin-left: -0.55rem; }
+    .drop-nav-wrap .drop-nav a {
+      -webkit-transition: color 0.2s;
+      -moz-transition: color 0.2s;
+      transition: color 0.2s;
+      color: #ffffff; }
+      .drop-nav-wrap .drop-nav a:hover, .drop-nav-wrap .drop-nav a:active {
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        transition: color 0.2s;
+        color: #008e57; }
+  @media screen and (max-width: 768px) {
+    .drop-nav-wrap .drop-nav {
+      position: abslute;
+      top: 100%;
+      right: 0;
+      bottom: auto;
+      left: auto; }
+      .drop-nav-wrap .drop-nav li {
+        font-size: 0.775em; }
+      .drop-nav-wrap .drop-nav li:first-child::before {
+        position: absolute;
+        top: -0.9rem;
+        right: 0.2rem;
+        bottom: 0;
+        left: auto; } }
 
 .site-header {
   padding: 1rem 0;
@@ -1522,34 +1547,13 @@ form {
     .site-header .rb-logo {
       float: left;
       margin-bottom: 1rem; }
-    .site-header .mobile-nav-toggle {
-      display: block;
-      float: right;
-      margin-top: 2.25rem; }
-    .site-header .site-nav {
-      -webkit-transition: max-height 0.3s, margin 0.5s;
-      -moz-transition: max-height 0.3s, margin 0.5s;
-      transition: max-height 0.3s, margin 0.5s;
-      clear: both;
-      max-height: 0;
-      overflow: hidden;
-      margin: 0;
-      background: rgba(26, 33, 31, 0.5); }
-      .site-header .site-nav.open {
-        max-height: 7em;
-        margin-bottom: 1rem; }
-      .site-header .site-nav a {
-        display: block;
-        text-align: left;
-        margin: 0;
-        padding: 0.25rem;
-        border-top: 1px solid #535957; }
-        .site-header .site-nav a:last-child {
-          border-bottom: 1px solid #535957; }
     .site-header .account-logged-in {
       margin-top: 1rem; }
     .site-header .drop-nav-wrap {
-      display: none; } }
+      float: right;
+      margin: 2rem 1rem 0 0; }
+    .site-header .user-login-wrap {
+      clear: both; } }
   @media screen and (min-width: 768px) {
     .site-header {
       padding: 1.5rem 0; }

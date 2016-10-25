@@ -3,21 +3,13 @@
 
     <a href="/"><?php echo file_get_contents("img/rb-logo-2.svg"); ?></a>
 
-    <a href="#" id="toggle" class="toggle-button mobile-nav-toggle"><span></span></a>
-
     <div class="sub-section">
-      <nav class="site-nav">
-        <a href="race-detail.php">Race Detail</a>
-        <a href="search-results.php">Search Results</a>
-        <a href="add-race.php">Add Race</a>
-      </nav>
-
       <div class="drop-nav-wrap">
         <a href="#" id="toggle" class="toggle-button"><span></span></a>
         <ul class="drop-nav" id="drop-nav">
-          <li><a href="/">Sample Link</a></li>
-          <li><a href="/">Sample Link</a></li>
-          <li><a href="/">Sample Link</a></li>
+          <li><a href="/"><a href="race-detail.php">Race Detail</a></a></li>
+          <li><a href="/"><a href="search-results.php">Search Results</a></a></li>
+          <li><a href="/"><a href="add-race.php">Add Race</a></a></li>
         </ul>
       </div>
 
