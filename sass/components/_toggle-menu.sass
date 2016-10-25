@@ -32,35 +32,63 @@
 
 .drop-nav-wrap
   position: relative
-  &.open
-    .drop-nav
-      visibility: visible
-      opacity: 1
-      margin-top: .5rem
+  +media($smallScreenUp)
+    &.open
+      .drop-nav
+        visibility: visible
+        opacity: 1
+        margin-top: .5rem
 
-  .drop-nav
-    +transition(opacity .2s, margin .3s)
-    visibility: hidden
-    opacity: 0
-    +position(absolute, 100% auto auto -3.5rem)
-    z-index: 500
-    width: 8rem
-    margin-top: -.5rem
-    padding: .5rem 0
-    text-align: center
-    background: darken($black, 3)
-    border-radius: .25rem
-    box-shadow: transparentize($black, .75) 0 5px 15px 0
-    li
+    .drop-nav
+      +transition(opacity .2s, margin .3s)
+      visibility: hidden
+      opacity: 0
+      +position(absolute, 100% auto auto -3.5rem)
+      z-index: 500
+      width: 8rem
+      margin-top: -.5rem
       padding: .5rem 0
-      font-size: .675em
-      font-weight: 700
-      line-height: 1
-      text-transform: uppercase
-      &:first-child
-        position: relative
-        &::before
-          content: ""
-          +triangle(1.5em, darken($black, 3), up)
-          +position(absolute, -.9rem 0 0 50%)
-          margin-left:  -.55rem
+      text-align: center
+      background: darken($black, 3)
+      border-radius: .25rem
+      box-shadow: transparentize($black, .75) 0 5px 15px 0
+      li
+        padding: .5rem 0
+        font-size: .675em
+        font-weight: 700
+        line-height: 1
+        text-transform: uppercase
+        &:first-child
+          position: relative
+          &::before
+            content: ""
+            +triangle(1.5em, darken($black, 3), up)
+            +position(absolute, -.9rem 0 0 50%)
+            margin-left:  -.55rem
+
++media($smallScreenDown)
+  #site-header
+    +transition(background .4s)
+    &.open
+      background: transparentize($black, .05)
+
+  .drop-nav-wrap.open .drop-nav
+    max-height: 300px
+
+  .toggle-button
+    +position(absolute, -3rem 0 auto auto)
+  .drop-nav
+    +transition(max-height .4s)
+    max-height: 0
+    overflow: hidden
+    li
+      padding: .35rem .5rem
+      text-align: left
+      border-top: 1px solid $gray-darker
+      &:last-child
+        margin-bottom: 1rem
+        border-bottom: 1px solid $gray-darker
+      a
+        text-transform: uppercase
+        font-size: .875em
+        font-weight: 700

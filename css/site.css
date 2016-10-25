@@ -252,7 +252,7 @@ table {
 .center-it {
   text-align: center; }
 
-.site-header .site-nav a, .site-header .account-logged-in .user-action-link, .site-footer .footer-nav a {
+.site-header .account-logged-in .user-action-link, .site-footer .footer-nav a {
   font-size: 0.875rem;
   font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-weight: 600;
@@ -1383,51 +1383,87 @@ form {
 
 .drop-nav-wrap {
   position: relative; }
-  .drop-nav-wrap.open .drop-nav {
-    visibility: visible;
-    opacity: 1;
-    margin-top: 0.5rem; }
-  .drop-nav-wrap .drop-nav {
-    -webkit-transition: opacity 0.2s, margin 0.3s;
-    -moz-transition: opacity 0.2s, margin 0.3s;
-    transition: opacity 0.2s, margin 0.3s;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    right: auto;
-    bottom: auto;
-    left: -3.5rem;
-    z-index: 500;
-    width: 8rem;
-    margin-top: -0.5rem;
-    padding: 0.5rem 0;
-    text-align: center;
-    background: #131817;
-    border-radius: 0.25rem;
-    box-shadow: rgba(26, 33, 31, 0.25) 0 5px 15px 0; }
-    .drop-nav-wrap .drop-nav li {
+  @media screen and (min-width: 768px) {
+    .drop-nav-wrap.open .drop-nav {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 0.5rem; }
+    .drop-nav-wrap .drop-nav {
+      -webkit-transition: opacity 0.2s, margin 0.3s;
+      -moz-transition: opacity 0.2s, margin 0.3s;
+      transition: opacity 0.2s, margin 0.3s;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      right: auto;
+      bottom: auto;
+      left: -3.5rem;
+      z-index: 500;
+      width: 8rem;
+      margin-top: -0.5rem;
       padding: 0.5rem 0;
-      font-size: 0.675em;
-      font-weight: 700;
-      line-height: 1;
-      text-transform: uppercase; }
-      .drop-nav-wrap .drop-nav li:first-child {
-        position: relative; }
-        .drop-nav-wrap .drop-nav li:first-child::before {
-          content: "";
-          height: 0;
-          width: 0;
-          border-left: 0.75em solid transparent;
-          border-right: 0.75em solid transparent;
-          border-bottom: 0.75em solid #131817;
-          position: absolute;
-          top: -0.9rem;
-          right: 0;
-          bottom: 0;
-          left: 50%;
-          margin-left: -0.55rem; }
+      text-align: center;
+      background: #131817;
+      border-radius: 0.25rem;
+      box-shadow: rgba(26, 33, 31, 0.25) 0 5px 15px 0; }
+      .drop-nav-wrap .drop-nav li {
+        padding: 0.5rem 0;
+        font-size: 0.675em;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase; }
+        .drop-nav-wrap .drop-nav li:first-child {
+          position: relative; }
+          .drop-nav-wrap .drop-nav li:first-child::before {
+            content: "";
+            height: 0;
+            width: 0;
+            border-left: 0.75em solid transparent;
+            border-right: 0.75em solid transparent;
+            border-bottom: 0.75em solid #131817;
+            position: absolute;
+            top: -0.9rem;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -0.55rem; } }
 
+@media screen and (max-width: 768px) {
+  #site-header {
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    transition: background 0.4s; }
+    #site-header.open {
+      background: rgba(26, 33, 31, 0.95); }
+
+  .drop-nav-wrap.open .drop-nav {
+    max-height: 300px; }
+
+  .toggle-button {
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    bottom: auto;
+    left: auto; }
+
+  .drop-nav {
+    -webkit-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+    max-height: 0;
+    overflow: hidden; }
+    .drop-nav li {
+      padding: 0.35rem 0.5rem;
+      text-align: left;
+      border-top: 1px solid #353c3a; }
+      .drop-nav li:last-child {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #353c3a; }
+      .drop-nav li a {
+        text-transform: uppercase;
+        font-size: 0.875em;
+        font-weight: 700; } }
 .site-header {
   padding: 1rem 0;
   text-align: center;
@@ -1445,19 +1481,6 @@ form {
       fill: #00C176; }
   .site-header .mobile-nav-toggle {
     display: none; }
-  .site-header .site-nav {
-    margin: 0.5rem 0; }
-    .site-header .site-nav a {
-      -webkit-transition: color 0.2s;
-      -moz-transition: color 0.2s;
-      transition: color 0.2s;
-      color: #ffffff;
-      margin: 0 0.5rem; }
-      .site-header .site-nav a:hover, .site-header .site-nav a:active {
-        -webkit-transition: color 0.2s;
-        -moz-transition: color 0.2s;
-        transition: color 0.2s;
-        color: #008e57; }
   .site-header .login-btn {
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
@@ -1522,45 +1545,19 @@ form {
     .site-header .rb-logo {
       float: left;
       margin-bottom: 1rem; }
-    .site-header .mobile-nav-toggle {
-      display: block;
-      float: right;
-      margin-top: 2.25rem; }
-    .site-header .site-nav {
-      -webkit-transition: max-height 0.3s, margin 0.5s;
-      -moz-transition: max-height 0.3s, margin 0.5s;
-      transition: max-height 0.3s, margin 0.5s;
-      clear: both;
-      max-height: 0;
-      overflow: hidden;
-      margin: 0;
-      background: rgba(26, 33, 31, 0.5); }
-      .site-header .site-nav.open {
-        max-height: 7em;
-        margin-bottom: 1rem; }
-      .site-header .site-nav a {
-        display: block;
-        text-align: left;
-        margin: 0;
-        padding: 0.25rem;
-        border-top: 1px solid #535957; }
-        .site-header .site-nav a:last-child {
-          border-bottom: 1px solid #535957; }
     .site-header .account-logged-in {
       margin-top: 1rem; }
     .site-header .drop-nav-wrap {
-      display: none; } }
+      clear: both; }
+    .site-header .user-login-wrap {
+      clear: both; } }
   @media screen and (min-width: 768px) {
     .site-header {
       padding: 1.5rem 0; }
       .site-header .rb-logo {
         height: 5em;
         width: auto; }
-      .site-header .site-nav {
-        margin: 0; }
-        .site-header .site-nav a {
-          margin-left: 1rem; }
-      .site-header .site-nav, .site-header .drop-nav-wrap, .site-header .user-login-wrap {
+      .site-header .drop-nav-wrap, .site-header .user-login-wrap {
         display: inline-block;
         vertical-align: middle; }
       .site-header .user-login-wrap {

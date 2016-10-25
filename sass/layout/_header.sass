@@ -14,13 +14,6 @@
   .mobile-nav-toggle
     display: none
 
-  .site-nav
-    margin: .5rem 0
-    a
-      +link-color($white)
-      @extend %small-caps
-      margin: 0 .5rem
-
   .login-btn
     +btn-dark($gray-medium, $white)
     +btn-small
@@ -67,35 +60,14 @@
       float: left
       margin-bottom: 1rem
 
-    .mobile-nav-toggle
-      display: block
-      float: right
-      margin-top: 2.25rem
-
-    .site-nav
-      +transition(max-height .3s, margin .5s)
-      clear: both
-      max-height: 0
-      overflow: hidden
-      margin: 0
-      background: transparentize($black, .5)
-      &.open
-        max-height: 7em
-        margin-bottom: 1rem
-      a
-        display: block
-        text-align: left
-        margin: 0
-        padding: .25rem
-        border-top: 1px solid $gray-dark
-        &:last-child
-          border-bottom:  1px solid $gray-dark
-
     .account-logged-in
       margin-top: 1rem
 
     .drop-nav-wrap
-      display: none
+      clear: both
+
+    .user-login-wrap
+      clear: both
 
   +media($smallScreenUp)
     padding: 1.5rem 0
@@ -103,12 +75,7 @@
     .rb-logo
       +size(auto 5em)
 
-    .site-nav
-      margin: 0
-      a
-        margin-left: 1rem
-
-    .site-nav, .drop-nav-wrap, .user-login-wrap
+    .drop-nav-wrap, .user-login-wrap
       display: inline-block
       vertical-align: middle
 
@@ -117,6 +84,7 @@
 
     .drop-nav-wrap
       margin: 0 1rem
+
     .rb-logo
       float: left
       +size(auto 4.5em)
