@@ -10,6 +10,16 @@
           <li><a href="/">Sample Link</a></li>
           <li><a href="/">Sample Link</a></li>
           <li><a href="/">Sample Link</a></li>
+          <li class="account-show-in-menu">
+            <figure>
+              <a href="#" class="user-avatar-wrap"> <img src="../img/default-avatar.png" class="user-avatar"/> </a>
+            </figure>
+            <span>
+              Tracy pompom winnebago davenport
+              <a href="#" class="user-action-link">Profile</a>
+              <a href="#" class="user-action-link">Logout</a>
+            </span>
+          </li>
         </ul>
       </div>
 

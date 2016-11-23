@@ -22,7 +22,6 @@
     +btn-small
 
   .account-logged-in
-    display: none
     span
       font-size: .675em
       font-weight: 600
@@ -55,13 +54,31 @@
   .user-avatar
     +size(auto 2em)
 
+  .account-show-in-menu
+    +clearfix
+    padding: .5rem
+    .user-avatar
+      +size(3rem)
+      vertical-align: bottom
+    figure
+      float: left
+      width: 3.5rem
+    span
+      float: left
+      width: calc(100% - 4rem)
+      line-height: 1.2
+      a
+        display: inline-block
+        margin: .5rem .5rem 0 0
+
   +media($smallScreenDown)
+
     .rb-logo
       float: left
       margin-bottom: 1rem
 
     .account-logged-in
-      margin-top: 1rem
+      display: none
 
     .drop-nav-wrap
       clear: both
@@ -94,6 +111,10 @@
       float: right
       margin-top: 1.25rem
 
+    /// HIDE USER ACCOUNT IN MENU
+    .account-show-in-menu
+      display: none
+
 .homepage .site-header
   +position(absolute, 0 0 auto 0)
   width: 100%
@@ -102,8 +123,12 @@
     padding: 1.5rem 2rem
 
 
-.add-race
+/// SHOW AND HIDE LOGIN & USER ELEMENTS
+.site-header
   .account-actions
     display: none
   .account-logged-in
     display: block
+  +media($smallScreenDown)
+    .account-logged-in
+      display: none

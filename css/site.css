@@ -1512,41 +1512,59 @@ form {
     @media screen and (min-width: 768px) {
       .site-header .signup-btn {
         font-size: 0.775em; } }
-  .site-header .account-logged-in {
-    display: none; }
-    .site-header .account-logged-in span {
-      font-size: 0.675em;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #ffffff; }
-    .site-header .account-logged-in .user-info-wrap {
-      text-align: right;
-      margin-right: 0.5rem; }
-      .site-header .account-logged-in .user-info-wrap span, .site-header .account-logged-in .user-info-wrap a {
-        display: block;
-        line-height: 1; }
-      .site-header .account-logged-in .user-info-wrap span {
-        max-width: 6em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        color: #8d908f; }
-    .site-header .account-logged-in .user-info-wrap,
-    .site-header .account-logged-in .user-avatar-wrap {
-      display: inline-block;
-      vertical-align: middle;
+  .site-header .account-logged-in span {
+    font-size: 0.675em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .site-header .account-logged-in .user-info-wrap {
+    text-align: right;
+    margin-right: 0.5rem; }
+    .site-header .account-logged-in .user-info-wrap span, .site-header .account-logged-in .user-info-wrap a {
+      display: block;
       line-height: 1; }
-    .site-header .account-logged-in .user-action-link {
-      margin: 0.25em 0 0 0; }
+    .site-header .account-logged-in .user-info-wrap span {
+      max-width: 6em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #8d908f; }
+  .site-header .account-logged-in .user-info-wrap,
+  .site-header .account-logged-in .user-avatar-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1; }
+  .site-header .account-logged-in .user-action-link {
+    margin: 0.25em 0 0 0; }
   .site-header .user-avatar {
     height: 2em;
     width: auto; }
+  .site-header .account-show-in-menu {
+    padding: 0.5rem; }
+    .site-header .account-show-in-menu:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .site-header .account-show-in-menu .user-avatar {
+      height: 3rem;
+      width: 3rem;
+      vertical-align: bottom; }
+    .site-header .account-show-in-menu figure {
+      float: left;
+      width: 3.5rem; }
+    .site-header .account-show-in-menu span {
+      float: left;
+      width: calc(100% - 4rem);
+      line-height: 1.2; }
+      .site-header .account-show-in-menu span a {
+        display: inline-block;
+        margin: 0.5rem 0.5rem 0 0; }
   @media screen and (max-width: 768px) {
     .site-header .rb-logo {
       float: left;
       margin-bottom: 1rem; }
     .site-header .account-logged-in {
-      margin-top: 1rem; }
+      display: none; }
     .site-header .drop-nav-wrap {
       clear: both; }
     .site-header .user-login-wrap {
@@ -1571,7 +1589,9 @@ form {
         margin-top: -1em; }
       .site-header .sub-section {
         float: right;
-        margin-top: 1.25rem; } }
+        margin-top: 1.25rem; }
+      .site-header .account-show-in-menu {
+        display: none; } }
 
 .homepage .site-header {
   position: absolute;
@@ -1585,10 +1605,13 @@ form {
     .homepage .site-header {
       padding: 1.5rem 2rem; } }
 
-.add-race .account-actions {
+.site-header .account-actions {
   display: none; }
-.add-race .account-logged-in {
+.site-header .account-logged-in {
   display: block; }
+@media screen and (max-width: 768px) {
+  .site-header .account-logged-in {
+    display: none; } }
 
 .site-footer {
   padding: 2rem 0;
@@ -1763,7 +1786,7 @@ form {
     color: #ffffff; }
   @media screen and (max-width: 768px) {
     .home-section.hero-section {
-      padding-top: 200px; } }
+      padding-top: 120px; } }
   @media screen and (min-width: 768px) {
     .home-section.hero-section {
       height: 50vh;
